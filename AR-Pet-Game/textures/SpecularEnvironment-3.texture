@@ -24,5 +24,17 @@
   "targetSize": "largest",
   "uWrapMode": "repeat",
   "vWrapMode": "clamp",
-  "width": 512
+  "width": 512,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "assetDataHash": "92a5a739b1757c26251637a07220e0a6",
+      "colorCount": 54462,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 13.884399275651251,
+      "pixelsHigh": 256,
+      "pixelsWide": 512
+    }
+  ]
 }
