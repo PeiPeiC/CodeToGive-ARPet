@@ -41,7 +41,15 @@
   "children": [
     {
       "modelName": "textures",
-      "identifier": "textures:91602-60540593-1c65-4e29-97e7-a71374ac4a38"
+      "identifier": "textures:91602-60540593-1c65-4e29-97e7-a71374ac4a38",
+      "children": [
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Texture 0.texture"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Texture 0.texture"
+        }
+      ]
     },
     {
       "sectionFileLocation": "AR-Pet-Game.scene"
@@ -78,7 +86,26 @@
     },
     {
       "modelName": "exportConfig",
-      "identifier": "exportConfig:91642-60540593-1c65-4e29-97e7-a71374ac4a38"
+      "identifier": "exportConfig:91642-60540593-1c65-4e29-97e7-a71374ac4a38",
+      "children": [
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:94579-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:94581-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:94583-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+          "method": "fastest"
+        }
+      ]
     },
     {
       "modelName": "manifest",
@@ -442,6 +469,270 @@
     {
       "modelName": "videos_model",
       "identifier": "videos_model:91807-60540593-1c65-4e29-97e7-a71374ac4a38"
+    },
+    {
+      "modelName": "materials",
+      "identifier": "materials:91644-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "children": [
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/M_Gecko.material"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/M_Muskrat.material"
+        }
+      ]
+    },
+    {
+      "modelName": "prefabs",
+      "identifier": "prefabs:91646-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "children": [
+        {
+          "modelName": "gltf",
+          "name": "Mesh",
+          "identifier": "gltf:91969-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+          "sourceIdentifier": "master3_d_object_model:91975-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+          "assetLocator": "91970-0bcd947f-53a6-4825-b75b-8f688eb174d7.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "Mesh0",
+          "identifier": "gltf:92413-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+          "sourceIdentifier": "master3_d_object_model:92419-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+          "assetLocator": "92414-0bcd947f-53a6-4825-b75b-8f688eb174d7.glb",
+          "isExternalAsset": false
+        }
+      ]
+    },
+    {
+      "modelName": "3_d_objects_model",
+      "identifier": "3_d_objects_model:91648-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "children": [
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Gecko_Animations.object"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Muskrat_Animations.object"
+        }
+      ]
+    },
+    {
+      "modelName": "animations_model",
+      "identifier": "animations_model:91650-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "children": [
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Attack.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Bounce.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Clicked.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Death.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Eat.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Fear.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Fly.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Hit.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Idle_A.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Idle_B.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Idle_C.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Jump.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Roll.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Run.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Sit.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Spin.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Swim.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Gecko_Animations/Walk.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Attack0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Bounce0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Clicked0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Death0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Eat0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Fear0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Fly0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Hit0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Idle_A0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Idle_B0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Idle_C0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Jump0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Roll0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Run0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Sit0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Spin0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Swim0.animation"
+        },
+        {
+          "sectionFileLocation": "objects/Muskrat_Animations/Walk0.animation"
+        }
+      ]
+    },
+    {
+      "modelName": "asset_collections_model",
+      "identifier": "asset_collections_model:91652-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "children": [
+        {
+          "modelName": "asset_collection_model",
+          "name": "Gecko_Animations",
+          "identifier": "asset_collection_model:92375-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+          "assetDataHash": "3f81f7aa5cbdc40d86d5220b87e10dc4",
+          "assetLocator": "objects/Gecko_Animations/Gecko_Animations.fbx",
+          "authoringTool": "Blender (stable FBX IO) - 3.3.1 - 4.36.3",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "3f81f7aa5cbdc40d86d5220b87e10dc4",
+          "textures": [
+            "objects/Gecko_Animations/Texture 0.texture"
+          ],
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:92373-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+              "namesForFeatureType": {
+                "Animation": [
+                  "Idle_C",
+                  "Eat",
+                  "Swim",
+                  "Death",
+                  "Attack",
+                  "Bounce",
+                  "Clicked",
+                  "Idle_A",
+                  "Fear",
+                  "Hit",
+                  "Fly",
+                  "Idle_B",
+                  "Jump",
+                  "Roll",
+                  "Run",
+                  "Sit",
+                  "Spin",
+                  "Walk"
+                ],
+                "Material": [
+                  "M_Gecko"
+                ],
+                "Texture": [
+                  "Gecko_Animations.fbm\\T_Gecko.png"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "Muskrat_Animations",
+          "identifier": "asset_collection_model:92891-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+          "assetDataHash": "631dfcbbf1144423c2026a92fedef7e4",
+          "assetLocator": "objects/Muskrat_Animations/Muskrat_Animations.fbx",
+          "authoringTool": "Blender (stable FBX IO) - 3.3.1 - 4.36.3",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "631dfcbbf1144423c2026a92fedef7e4",
+          "textures": [
+            "objects/Muskrat_Animations/Texture 0.texture"
+          ],
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:92889-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+              "namesForFeatureType": {
+                "Animation": [
+                  "Idle_C",
+                  "Eat",
+                  "Swim",
+                  "Death",
+                  "Attack",
+                  "Bounce",
+                  "Clicked",
+                  "Idle_A",
+                  "Fear",
+                  "Hit",
+                  "Fly",
+                  "Idle_B",
+                  "Jump",
+                  "Roll",
+                  "Run",
+                  "Sit",
+                  "Spin",
+                  "Walk"
+                ],
+                "Material": [
+                  "M_Muskrat"
+                ],
+                "Texture": [
+                  "Muskrat_Animations.fbm\\T_Muskrat.png"
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

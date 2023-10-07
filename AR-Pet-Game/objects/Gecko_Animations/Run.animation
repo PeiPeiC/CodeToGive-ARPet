@@ -1,0 +1,109 @@
+{
+  "modelName": "animation_model",
+  "name": "Run",
+  "identifier": "animation_model:92263-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+  "sourceIdentifier": "asset_collection_model:92375-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+  "assetLocator": "f756d1c4ed6d7c64b1216749e28d9d56.glb",
+  "duration": 0.4166666666666667,
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "importIssues": {},
+  "isExternalAsset": false,
+  "ticksPerSecond": 24,
+  "children": [
+    {
+      "modelName": "animation_channels_model",
+      "identifier": "animation_channels_model:92265-0bcd947f-53a6-4825-b75b-8f688eb174d7"
+    },
+    {
+      "modelName": "animation_channel_model",
+      "name": "animation_channel_model0",
+      "identifier": "animation_channel_model:92267-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "animationMask": {
+        "position": true,
+        "rotation": true,
+        "scale": true
+      }
+    },
+    {
+      "modelName": "animation_channel_model",
+      "name": "animation_channel_model1",
+      "identifier": "animation_channel_model:92269-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "animationMask": {
+        "position": true,
+        "rotation": true,
+        "scale": true
+      }
+    },
+    {
+      "modelName": "animation_channel_model",
+      "name": "animation_channel_model2",
+      "identifier": "animation_channel_model:92271-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "animationMask": {
+        "position": true,
+        "rotation": true,
+        "scale": true
+      }
+    },
+    {
+      "modelName": "animation_channel_model",
+      "name": "animation_channel_model3",
+      "identifier": "animation_channel_model:92273-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "animationMask": {
+        "position": true,
+        "rotation": true,
+        "scale": true
+      }
+    },
+    {
+      "modelName": "animation_channel_model",
+      "name": "animation_channel_model4",
+      "identifier": "animation_channel_model:92275-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "animationMask": {
+        "position": true,
+        "rotation": true,
+        "scale": true
+      }
+    },
+    {
+      "modelName": "animation_channel_model",
+      "name": "animation_channel_model5",
+      "identifier": "animation_channel_model:92277-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "animationMask": {
+        "position": true,
+        "rotation": true,
+        "scale": true
+      }
+    },
+    {
+      "modelName": "animation_channel_model",
+      "name": "animation_channel_model6",
+      "identifier": "animation_channel_model:92279-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "animationMask": {
+        "position": true,
+        "rotation": true,
+        "scale": true
+      }
+    },
+    {
+      "modelName": "animation_channel_model",
+      "name": "animation_channel_model7",
+      "identifier": "animation_channel_model:92281-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "animationMask": {
+        "position": true,
+        "rotation": true,
+        "scale": true
+      }
+    },
+    {
+      "modelName": "animation_channel_model",
+      "name": "animation_channel_model8",
+      "identifier": "animation_channel_model:92283-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+      "animationMask": {
+        "position": true,
+        "rotation": true,
+        "scale": true
+      }
+    }
+  ]
+}
