@@ -1,6 +1,12 @@
-import streamlit as st
 import base64
+import streamlit as st
+from audio_recorder_streamlit import audio_recorder
+import speech_recognition as sr
 import openai
+import tempfile
+from pydub import AudioSegment
+import io
+import os
 
 # Define function to create a data URI for an image
 def image_to_data_uri(img_path):
@@ -12,40 +18,7 @@ mic_icon = image_to_data_uri("./icons/microphone_icon.png")
 keyboard_icon = image_to_data_uri("./icons/keyboard_icon.png")
 hand_icon = image_to_data_uri("./icons/hand_icon.png")
 
-# Set child-friendly styles
-st.markdown(
-    """
-    <style>
-        body {
-            background-color: #FFDAB9; /* Peach background */
-            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt'; /* Fun font */
-        }
-        h1, h2 {
-            color: #FF69B4; /* Bright pink titles */
-        }
-        .icon-button {
-            padding: 15px 30px;
-            font-size: 20px;
-            border: none;
-            background-color: #ADFF2F; /* GreenYellow background for buttons */
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 15px;
-            border-radius: 15px;
-            transition: background-color 0.3s;
-        }
-        .icon-button img {
-            width: 30px;
-            height: 30px;
-        }
-        .icon-button:hover {
-            background-color: #7FFF00; /* Chartreuse color on hover */
-        }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+
 
 def display_login_page():
     st.title("Welcome to AR Pet Game!")
@@ -56,6 +29,21 @@ def display_login_page():
     for method in login_methods:
         if st.button(method):
             st.session_state['logged_in'] = True
+
+
+def get_text_from_audio(audio_bytes):
+    r = sr.Recognizer()
+    with sr.AudioFile(audio_bytes) as source:
+        audio_data = r.record(source)
+        try:
+            text = r.recognize_google(audio_data)
+            return text
+        except sr.UnknownValueError:
+            st.error("Google Speech Recognition could not understand the audio.")
+        except sr.RequestError:
+            st.error("Could not request results from Google Speech Recognition service.")
+    return None
+
 
 def display_pet_design_page():
     st.title("Design Your Pet!")
@@ -108,7 +96,7 @@ st.markdown(
             padding: 15px 30px;
             font-size: 20px;
             border: none;
-            background-color: #FEC773; /* GreenYellow background for buttons */
+            background-color: #FEC773; /*  background for buttons */
             cursor: pointer;
             display: block; /* Make buttons block-level elements */
             width: 80%; /* Set a fixed width */
@@ -129,6 +117,51 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+# Function to generate image from text using OpenAI
+def generate_image_from_text(user_input):
+    try:
+        openai.api_key = "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"  # Replace with your OpenAI API key
+        res = openai.Image.create(
+            prompt=user_input,
+            n=1,
+            size="1024x1024",
+            response_format="b64_json"
+        )
+        generated_image_data = res['data'][0]['b64_json']
+        image_bytes = base64.b64decode(generated_image_data)
+        st.image(image_bytes, caption="Generated Image", use_column_width=True)
+    except Exception as e:
+        # Print the exception details for debugging
+        print(f"Error: {e}")
+        st.error("Oops! Something went wrong while generating the image. Please try again later.")
+
+def convert_to_wav(audio_bytes):
+    audio = AudioSegment.from_file(io.BytesIO(audio_bytes))
+    temp_audio_filename = tempfile.mktemp(suffix=".wav")
+    audio.export(temp_audio_filename, format="wav")
+    return temp_audio_filename
+
+def get_text_from_audio(audio_bytes):
+    r = sr.Recognizer()
+    
+    # Convert audio to WAV format
+    wav_filename = convert_to_wav(audio_bytes)
+    
+    try:
+        with sr.AudioFile(wav_filename) as source:
+            audio_data = r.record(source)
+            try:
+                text = r.recognize_google(audio_data)
+                return text
+            except sr.UnknownValueError:
+                st.error("Google Speech Recognition could not understand the audio.")
+            except sr.RequestError:
+                st.error("Could not request results from Google Speech Recognition service.")
+    finally:
+        # Ensure the temporary file is deleted
+        os.remove(wav_filename)
+    
+    return None
 
 # Main App Logic
 st.write("")  # Add an empty line for spacing
@@ -142,53 +175,50 @@ with col2:  # Use the center column to display the content
     else:
         if st.session_state['pet_design'] == "Design My Own Pet":
             st.title("Choose Your Input Method")
+        
+            # Invisible Streamlit buttons to set session state values
+            if st.button("Voice Input", key="voice"):
+                st.session_state['input_method'] = 'voice'
+            if st.button("Text Input", key="text"):
+                st.session_state['input_method'] = 'text'
+            if st.button("Sign Language Input", key="sign"):
+                st.session_state['input_method'] = 'sign'
+
+            # Custom-styled buttons overlaying the Streamlit buttons
+            st.markdown(f"""
+            <style>
+                .btn-md {{ visibility: hidden; }}
+            </style>
+            <div>
+                <a class="icon-button">
+                    <img src="data:image/png;base64,{mic_icon}" alt="Microphone Icon">
+                    Voice Input
+                </a>
+                <a class="icon-button">
+                    <img src="data:image/png;base64,{keyboard_icon}" alt="Keyboard Icon">
+                    Text Input
+                </a>
+                <a class="icon-button">
+                    <img src="data:image/png;base64,{hand_icon}" alt="Hand Icon">
+                    Sign Language Input
+                </a>
+            </div>
+            """, unsafe_allow_html=True)
             
-            # Display microphone icon for voice input
-            st.markdown(f"""
-            <button class="icon-button">
-                <img src="data:image/png;base64,{mic_icon}" alt="Microphone Icon">
-                Voice Input
-            </button>
-            """, unsafe_allow_html=True)
-            # Placeholder for voice input
-            st.text_input("Speak Now:")
-
-            # Display keyboard icon for text input
-            st.markdown(f"""
-            <button class="icon-button">
-                <img src="data:image/png;base64,{keyboard_icon}" alt="Keyboard Icon">
-                Text Input
-            </button>
-            """, unsafe_allow_html=True)
-            user_input = st.text_input("Type Here:")
-
-            if user_input:
-                st.write("Generating pet...")
-                try:
-                    openai.api_key = "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"  # Replace with your OpenAI API key
-
-                    res = openai.Image.create(
-                        prompt=user_input,
-                        n=1,
-                        size="1024x1024",
-                        response_format="b64_json"
-                    )
-
-                    generated_image_data = res['data'][0]['b64_json']
-                    image_bytes = base64.b64decode(generated_image_data)
-                    st.image(image_bytes, caption="Magic Image ", use_column_width=True)
-
-                except Exception as e:
-                    st.error("Oops! Something went wrong while generating the image. Please try again later. ")
-
-            # Display hand icon for sign language input
-            st.markdown(f"""
-            <button class="icon-button">
-                <img src="data:image/png;base64,{hand_icon}" alt="Hand Icon">
-                Sign Language Input
-            </button>
-            """, unsafe_allow_html=True)
-            # Placeholder for sign language input
-            st.write("Sign language input selected!")
+            # Check which button was pressed using session state
+            if st.session_state.get('input_method') == 'voice':
+                audio_bytes = audio_recorder()
+                if audio_bytes:
+                    user_input = get_text_from_audio(audio_bytes)
+                    if user_input:
+                        # Use the text to generate an image using OpenAI
+                        generate_image_from_text(user_input)
+            elif st.session_state.get('input_method') == 'text':
+                user_input = st.text_input("Type Here:")
+                if user_input:
+                    # Use the user_input to generate an image using OpenAI
+                    generate_image_from_text(user_input)
+            elif st.session_state.get('input_method') == 'sign':
+                st.camera_input("Capture Makaton Sign Language")
         else:
             display_pet_choice_page()
