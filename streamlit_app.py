@@ -52,4 +52,10 @@ st.write("Sign Language Input")
 # Display footer
 st.markdown(
     """
-    <footer style="position: absolute; bottom: 0; width: 100%; text-align: center; padding
+    <footer style="position: absolute; bottom: 0; width: 100%; text-align: center; padding: 10px; background-color: #FFA07A;">
+        AR Pet Game &copy; 2023
+    </footer>
+    """,
+    unsafe_allow_html=True,
+)
+
