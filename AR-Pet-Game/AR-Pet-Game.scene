@@ -282,7 +282,7 @@
               "cameraVisibility": "back|front",
               "depth": 0.9361807107925415,
               "height": 0.4976491332054138,
-              "hidden": false,
+              "hidden": true,
               "layerIdentifier": "layer0",
               "outputVisibility": "preview|capture",
               "physicsEnabled": false,
@@ -901,7 +901,7 @@
                             "joint:93124-0bcd947f-53a6-4825-b75b-8f688eb174d7",
                             "joint:93125-0bcd947f-53a6-4825-b75b-8f688eb174d7"
                           ],
-                          "materialIdentifier": "dependent_material_model:92379-0bcd947f-53a6-4825-b75b-8f688eb174d7",
+                          "materialIdentifier": "metallicRoughnessPbrMaterial:96258-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
                           "surfaceGroupIdentifier": "92417-0bcd947f-53a6-4825-b75b-8f688eb174d7"
                         }
                       ]

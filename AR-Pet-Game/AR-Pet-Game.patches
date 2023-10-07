@@ -1,20 +1,96 @@
 {
   "id": "91920605405931c654e2997e7a71374ac4a38",
-  "revision": "15126690eba6ebafc446949d49d9cf81280a94",
+  "revision": "10261633c3dde9d3b842219ef4f71ff87b99a7",
   "version": {
     "dev": 0,
     "patch": 0,
     "prod": 171
   },
   "creatorIdentifier": "com.facebook.arstudio.skylight",
-  "creatorPlatform": "windows",
+  "creatorPlatform": "macosx",
   "creatorFileVersion": {
     "dev": 0,
     "patch": 0,
     "prod": 171
   },
   "visual_programming": {
+    "comments": [
+      {
+        "modelName": "patch_comment_block_model",
+        "name": "Position_manipulator",
+        "identifier": "patch_comment_block_model:1196948-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "color": "Yellow",
+        "container": "patch_graph:91686-60540593-1c65-4e29-97e7-a71374ac4a38",
+        "frame": [
+          117,
+          -915,
+          1479,
+          373
+        ]
+      },
+      {
+        "modelName": "patch_comment_block_model",
+        "name": "Muskrat Animations",
+        "identifier": "patch_comment_block_model:1196950-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "color": "Orange",
+        "container": "patch_graph:91686-60540593-1c65-4e29-97e7-a71374ac4a38",
+        "frame": [
+          -243,
+          -363,
+          1965,
+          650
+        ]
+      }
+    ],
     "connections": [
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:1196932-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPatch": "template_patch_model:1196928-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:1196930-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:1196934-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPatch": "template_patch_model:1196930-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPort": "100",
+        "toPatch": "producer_patch_model:1196926-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:1196938-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPatch": "template_patch_model:107588-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:1196936-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:1196940-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPatch": "template_patch_model:1196936-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:1196930-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "toPort": "2"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:1196942-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPatch": "template_patch_model:107588-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPort": "101",
+        "toPatch": "template_patch_model:1196930-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "toPort": "3"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:1196946-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPatch": "producer_patch_model:1196926-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "fromPort": "104",
+        "toPatch": "template_patch_model:1196944-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "toPort": "1"
+      },
       {
         "modelName": "patch_connection_model",
         "identifier": "patch_connection_model:157870-90eba6eb-afc4-4694-9d49-d9cf81280a94",
@@ -126,9 +202,15 @@
         "identifier": "patch_graph:91686-60540593-1c65-4e29-97e7-a71374ac4a38",
         "subpatches": [
           "consumer_patch_model:155662-90eba6eb-afc4-4694-9d49-d9cf81280a94",
+          "producer_patch_model:1196926-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
           "producer_patch_model:157880-90eba6eb-afc4-4694-9d49-d9cf81280a94",
           "producer_patch_model:159002-90eba6eb-afc4-4694-9d49-d9cf81280a94",
           "producer_patch_model:160132-90eba6eb-afc4-4694-9d49-d9cf81280a94",
+          "template_patch_model:107588-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "template_patch_model:1196928-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "template_patch_model:1196930-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "template_patch_model:1196936-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "template_patch_model:1196944-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
           "template_patch_model:156764-90eba6eb-afc4-4694-9d49-d9cf81280a94",
           "template_patch_model:157868-90eba6eb-afc4-4694-9d49-d9cf81280a94",
           "template_patch_model:157874-90eba6eb-afc4-4694-9d49-d9cf81280a94",
@@ -149,6 +231,16 @@
         "position": [
           1508,
           -76
+        ]
+      },
+      {
+        "modelName": "producer_patch_model",
+        "name": "planeTracker0",
+        "identifier": "producer_patch_model:1196926-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "object": "plane_tracker_model:91922-60540593-1c65-4e29-97e7-a71374ac4a38",
+        "position": [
+          1124,
+          -868
         ]
       },
       {
@@ -180,6 +272,57 @@
           332,
           -292
         ]
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Screen Tap and Hold",
+        "identifier": "template_patch_model:107588-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "position": [
+          164,
+          -676
+        ],
+        "templateId": "builtin.longPressGesture"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Plane Finder",
+        "identifier": "template_patch_model:1196928-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "position": [
+          572,
+          -868
+        ],
+        "templateId": "builtin.planeFinder"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Plane Select",
+        "identifier": "template_patch_model:1196930-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "position": [
+          764,
+          -868
+        ],
+        "templateId": "builtin.planePicker"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Pulse",
+        "identifier": "template_patch_model:1196936-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "position": [
+          428,
+          -748
+        ],
+        "templateId": "builtin.pulse"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Value",
+        "identifier": "template_patch_model:1196944-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+        "position": [
+          1316,
+          -748
+        ],
+        "templateId": "builtin.value",
+        "variantInfo": "float"
       },
       {
         "modelName": "template_patch_model",

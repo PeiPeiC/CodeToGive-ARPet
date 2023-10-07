@@ -3,14 +3,14 @@
   "name": "Effect",
   "identifier": "document:91596-60540593-1c65-4e29-97e7-a71374ac4a38",
   "id": "91920605405931c654e2997e7a71374ac4a38",
-  "revision": "15126690eba6ebafc446949d49d9cf81280a94",
+  "revision": "10261633c3dde9d3b842219ef4f71ff87b99a7",
   "version": {
     "dev": 0,
     "patch": 0,
     "prod": 171
   },
   "creatorIdentifier": "com.facebook.arstudio.skylight",
-  "creatorPlatform": "windows",
+  "creatorPlatform": "macosx",
   "creatorFileVersion": {
     "dev": 0,
     "patch": 0,
@@ -22,7 +22,11 @@
   "objects": [
     {
       "modelName": "assets_config_model",
-      "identifier": "assets_config_model:91815-60540593-1c65-4e29-97e7-a71374ac4a38"
+      "identifier": "assets_config_model:91815-60540593-1c65-4e29-97e7-a71374ac4a38",
+      "categoriesOrder": [
+        "textures",
+        "materials"
+      ]
     }
   ],
   "previousDocumentIds": [
@@ -43,6 +47,23 @@
         },
         {
           "sectionFileLocation": "objects/Muskrat_Animations/Texture 0.texture"
+        },
+        {
+          "sectionFileLocation": "textures/DiffuseEnvironment-3.texture"
+        },
+        {
+          "sectionFileLocation": "textures/PreviewEnvironment-3.texture"
+        },
+        {
+          "sectionFileLocation": "textures/SpecularEnvironment-3.texture"
+        },
+        {
+          "modelName": "environment_texture_model",
+          "name": "forest",
+          "identifier": "environment_texture_model:97492-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "diffuseEnvironmentTextureIdentifier": "textures/DiffuseEnvironment-3.texture",
+          "previewEnvironmentTextureIdentifier": "textures/PreviewEnvironment-3.texture",
+          "specularEnvironmentTextureIdentifier": "textures/SpecularEnvironment-3.texture"
         }
       ]
     },
@@ -99,6 +120,57 @@
           "modelName": "textureExportConfig",
           "identifier": "textureExportConfig:94583-0bcd947f-53a6-4825-b75b-8f688eb174d7",
           "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:97468-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "accuracy": "best"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:97470-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "accuracy": "best",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:97472-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "accuracy": "best",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:97477-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "accuracy": "best"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:97479-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "accuracy": "best",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:97481-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "accuracy": "best",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:97486-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "accuracy": "best"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:97488-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "accuracy": "best",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:97490-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "accuracy": "best",
+          "targetFormat": 1
         }
       ]
     },
@@ -243,7 +315,7 @@
       "effectUsesIdTracker": false,
       "effectUsesImageAntiAliasing": false,
       "effectUsesImageAssets": false,
-      "effectUsesImageBasedLighting": false,
+      "effectUsesImageBasedLighting": true,
       "effectUsesInstruction": false,
       "effectUsesIntent": false,
       "effectUsesInterEffectLinking": false,
@@ -288,7 +360,7 @@
       "effectUsesOpticalFlow": false,
       "effectUsesOpusCodec": false,
       "effectUsesOverlayOutput": false,
-      "effectUsesPBRMaterial": false,
+      "effectUsesPBRMaterial": true,
       "effectUsesParticipant": false,
       "effectUsesParticleSystem": false,
       "effectUsesPeerOutput": false,
@@ -413,7 +485,7 @@
       "landmarkMeshID": null,
       "landmarkMeshType": null,
       "liveEffectSupportsNonLive": false,
-      "manuallyEnabledItemsIds": null,
+      "manuallyEnabledItemsIds": [],
       "maxParticipantsCount": 0,
       "multiclassSegmentationMinVersion": 3004,
       "objectTrackerMaxObjects": 1,
@@ -431,7 +503,7 @@
       "supportsPortrait": true,
       "supportsWildcardDomainsWhitelisting": false,
       "targetRecognitionMinVersion": 2,
-      "touchGesturesSupportsLongPress": false,
+      "touchGesturesSupportsLongPress": true,
       "touchGesturesSupportsPan": false,
       "touchGesturesSupportsPinch": false,
       "touchGesturesSupportsRawTouch": false,
@@ -473,7 +545,7 @@
           "sectionFileLocation": "objects/Gecko_Animations/M_Gecko.material"
         },
         {
-          "sectionFileLocation": "objects/Muskrat_Animations/M_Muskrat.material"
+          "sectionFileLocation": "materials/M_Muskrat.material"
         }
       ]
     },
@@ -726,6 +798,34 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "modelName": "asset_attributions_model",
+      "identifier": "asset_attributions_model:92660-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+      "children": [
+        {
+          "modelName": "asset_attribution_model",
+          "identifier": "asset_attribution_model:97494-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "assetAuthor": "Spark AR Assets",
+          "assetModelIdentifier": "environment_texture_model:97492-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "assetTitle": "Forest",
+          "assetURLString": "",
+          "licenseModelIdentifier": "license_model:95080-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7"
+        }
+      ]
+    },
+    {
+      "modelName": "licenses_model",
+      "identifier": "licenses_model:92662-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+      "children": [
+        {
+          "modelName": "license_model",
+          "name": "Creative Commons Attribution 4.0",
+          "identifier": "license_model:95080-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "linkURLString": "https://creativecommons.org/licenses/by/4.0/",
+          "slug": "CC BY 4.0"
         }
       ]
     }
