@@ -43,77 +43,35 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Check if user is logged in
-if 'logged_in' not in st.session_state:
-    st.session_state['logged_in'] = False
 
-# Check if user has chosen pet design
-if 'pet_design' not in st.session_state:
-    st.session_state['pet_design'] = None
 
-# Login/Signup Page
-if not st.session_state['logged_in']:
-    st.title("Welcome to AR Pet Game!")
-    st.subheader("Please login or signup to continue.")
+st.title("Welcome to AR Pet Game!")
     
-    # Using session state to detect button clicks
-    if 'google_clicked' not in st.session_state:
-        st.session_state['google_clicked'] = False
-    if 'facebook_clicked' not in st.session_state:
-        st.session_state['facebook_clicked'] = False
-    if 'signup_clicked' not in st.session_state:
-        st.session_state['signup_clicked'] = False
 
-    # Display buttons and check for clicks
-    if st.button("Login with Google"):
-        st.session_state['google_clicked'] = True
-    if st.button("Login with Facebook"):
-        st.session_state['facebook_clicked'] = True
-    if st.button("Signup"):
-        st.session_state['signup_clicked'] = True
 
-    # Handle button clicks
-    if st.session_state['google_clicked']:
-        st.session_state['logged_in'] = True
-        st.session_state['google_clicked'] = False  # Reset the button state
-    if st.session_state['facebook_clicked']:
-        st.session_state['logged_in'] = True
-        st.session_state['facebook_clicked'] = False  # Reset the button state
-    if st.session_state['signup_clicked']:
-        st.session_state['logged_in'] = True
-        st.session_state['signup_clicked'] = False  # Reset the button stat
-# Pet Design Selection Page
-elif st.session_state['pet_design'] is None:
-    st.title("Design Your Pet!")
-    st.subheader("Choose how you'd like to design your pet.")
-    
-    if st.button("Design My Own Pet"):
-        st.session_state['pet_design'] = 'custom'
-    if st.button("Use Pre-designed Pet"):
-        st.session_state['pet_design'] = 'premade'
+st.title("Design Your Pet!")
 
-# Input Selection or Pre-designed Pets Page
-else:
-    if st.session_state['pet_design'] == 'custom':
-        st.title("Choose Your Input Method")
+
+
+st.title("Choose Your Input Method")
         
-        # Define the icons
-        mic_icon = image_to_data_uri("./icons/microphone_icon.png")
-        keyboard_icon = image_to_data_uri("./icons/keyboard_icon.png")
-        hand_icon = image_to_data_uri("./icons/hand_icon.png")
+# Define the icons
+mic_icon = image_to_data_uri("./icons/microphone_icon.png")
+keyboard_icon = image_to_data_uri("./icons/keyboard_icon.png")
+hand_icon = image_to_data_uri("./icons/hand_icon.png")
         
-        col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns(3)
         
-        # Display microphone icon for voice input in the first column
-        with col1:
-            st.markdown(f"""
-            <button class="icon-button">
-                <img src="data:image/png;base64,{mic_icon}" alt="Microphone Icon">
-                Voice Input
-            </button>
-            """, unsafe_allow_html=True)
-            # Connect to Whisper API for speech-to-text (for this mockup, we'll use a text input)
-            st.text_input("Speak Now:")
+# Display microphone icon for voice input in the first column
+with col1:
+        st.markdown(f"""
+        <button class="icon-button">
+            <img src="data:image/png;base64,{mic_icon}" alt="Microphone Icon">
+            Voice Input
+        </button>
+        """, unsafe_allow_html=True)
+        # Connect to Whisper API for speech-to-text (for this mockup, we'll use a text input)
+        st.text_input("Speak Now:")
         
         # Display keyboard icon for text input in the second column
         with col2:
@@ -158,16 +116,4 @@ else:
             # Placeholder for sign language input
             st.write("Sign language input selected!")
     
-    elif st.session_state['pet_design'] == 'premade':
-        st.title("Choose Your Pet")
-        
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            if st.button("Pet 1"):
-                st.write("You chose Pet 1!")
-        with col2:
-            if st.button("Pet 2"):
-                st.write("You chose Pet 2!")
-        with col3:
-            if st.button("Pet 3"):
-                st.write("You chose Pet 3!")
+
