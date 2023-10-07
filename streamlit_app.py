@@ -1,5 +1,9 @@
 import streamlit as st
+from PIL import Image as PILImage
+import io
 import base64
+import openai
+import requests
 
 # Define function to create a data URI for an image
 def image_to_data_uri(img_path):
@@ -119,7 +123,29 @@ else:
                 Text Input
             </button>
             """, unsafe_allow_html=True)
-            st.text_input("Type Here:")
+            user_input = st.text_input("Type Here:")
+    
+            if user_input:
+                st.write("Generating pet...")
+                try:
+                    openai.api_key = "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"
+
+                    res = openai.Image.create(
+                        prompt=user_input,
+                        n=1,
+                        size="1024x1024",
+                        response_format="b64_json"
+                    )
+
+                    generated_image_data = res['data'][0]['b64_json']
+
+                    image_bytes = base64.b64decode(generated_image_data)
+
+                    st.image(image_bytes, caption="Magic Image ", use_column_width=True)
+
+                except Exception as e:
+                    st.error("Oops! Something went wrong while generating the image. Please try again later. ")
+
         
         # Display hand icon for sign language input in the third column
         with col3:
