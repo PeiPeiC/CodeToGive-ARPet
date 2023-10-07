@@ -1,4 +1,3 @@
-# Import necessary libraries
 import streamlit as st
 import base64
 
@@ -10,58 +9,139 @@ def image_to_data_uri(img_path):
 # Set page title and layout
 st.set_page_config(page_title="AR Pet Game", layout="centered", initial_sidebar_state="collapsed")
 
-# Set background color
+# Set background color and custom CSS styles
 st.markdown(
     """
     <style>
         body {
             background-color: #FFDDC1;
         }
+        .icon-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #f5f5f5;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .icon-button img {
+            width: 20px;
+            height: 20px;
+        }
+        .icon-button:hover {
+            background-color: #e0e0e0;
+        }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
-# Display title
-st.title("Welcome to AR Pet Game!")
+# Check if user is logged in
+if 'logged_in' not in st.session_state:
+    st.session_state['logged_in'] = False
 
-# Display subtitle
-st.subheader("Choose your way to play:")
+# Check if user has chosen pet design
+if 'pet_design' not in st.session_state:
+    st.session_state['pet_design'] = None
 
-# Create three columns for the buttons
-col1, col2, col3 = st.columns(3)
+# Login/Signup Page
+if not st.session_state['logged_in']:
+    st.title("Welcome to AR Pet Game!")
+    st.subheader("Please login or signup to continue.")
+    
+    # Using session state to detect button clicks
+    if 'google_clicked' not in st.session_state:
+        st.session_state['google_clicked'] = False
+    if 'facebook_clicked' not in st.session_state:
+        st.session_state['facebook_clicked'] = False
+    if 'signup_clicked' not in st.session_state:
+        st.session_state['signup_clicked'] = False
 
-# Display microphone icon for voice input in the first column
-with col1:
-    mic_icon = image_to_data_uri("./icons/microphone_icon.png")
-    if st.button("Voice Input", key="voice_button"):
-        st.write("Voice input selected!")
-    st.markdown(f'<img src="data:image/jpeg;base64,{mic_icon}" width="80" style="display: block; margin: 0 auto;">', unsafe_allow_html=True)
+    # Display buttons and check for clicks
+    if st.button("Login with Google"):
+        st.session_state['google_clicked'] = True
+    if st.button("Login with Facebook"):
+        st.session_state['facebook_clicked'] = True
+    if st.button("Signup"):
+        st.session_state['signup_clicked'] = True
 
-# Display keyboard icon for text input in the second column
-with col2:
-    keyboard_icon = image_to_data_uri("./icons/keyboard_icon.png")
-    if st.button("Text Input", key="text_button"):
-        st.write("Text input selected!")
-    st.markdown(f'<img src="data:image/png;base64,{keyboard_icon}" width="80" style="display: block; margin: 0 auto;">', unsafe_allow_html=True)
+    # Handle button clicks
+    if st.session_state['google_clicked']:
+        st.session_state['logged_in'] = True
+        st.session_state['google_clicked'] = False  # Reset the button state
+    if st.session_state['facebook_clicked']:
+        st.session_state['logged_in'] = True
+        st.session_state['facebook_clicked'] = False  # Reset the button state
+    if st.session_state['signup_clicked']:
+        st.session_state['logged_in'] = True
+        st.session_state['signup_clicked'] = False  # Reset the button stat
+# Pet Design Selection Page
+elif st.session_state['pet_design'] is None:
+    st.title("Design Your Pet!")
+    st.subheader("Choose how you'd like to design your pet.")
+    
+    if st.button("Design My Own Pet"):
+        st.session_state['pet_design'] = 'custom'
+    if st.button("Use Pre-designed Pet"):
+        st.session_state['pet_design'] = 'premade'
 
-# Display hand icon for sign language input in the third column (assuming you have this section in your code)
-with col3:
-    hand_icon = image_to_data_uri("./icons/hand_icon.png")
-    if st.button("Sign Language Input", key="sign_language_button"):
-        st.write("Sign language input selected!")
-    st.markdown(f'<img src="data:image/png;base64,{hand_icon}" width="80" style="display: block; margin: 0 auto;">', unsafe_allow_html=True)
-
-
-# Add some spacing before the footer
-st.write("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-st.write("Code to give Team 1 ")
-# Display footer
-st.markdown(
-    """
-    <footer style="padding: 10px; background-color: #FFA07A; text-align: center;">
-        AR Pet Game &copy; 2023
-    </footer>
-    """,
-    unsafe_allow_html=True,
-)
+# Input Selection or Pre-designed Pets Page
+else:
+    if st.session_state['pet_design'] == 'custom':
+        st.title("Choose Your Input Method")
+        
+        # Define the icons
+        mic_icon = image_to_data_uri("./icons/microphone_icon.png")
+        keyboard_icon = image_to_data_uri("./icons/keyboard_icon.png")
+        hand_icon = image_to_data_uri("./icons/hand_icon.png")
+        
+        col1, col2, col3 = st.columns(3)
+        
+        # Display microphone icon for voice input in the first column
+        with col1:
+            st.markdown(f"""
+            <button class="icon-button">
+                <img src="data:image/png;base64,{mic_icon}" alt="Microphone Icon">
+                Voice Input
+            </button>
+            """, unsafe_allow_html=True)
+            # Connect to Whisper API for speech-to-text (for this mockup, we'll use a text input)
+            st.text_input("Speak Now:")
+        
+        # Display keyboard icon for text input in the second column
+        with col2:
+            st.markdown(f"""
+            <button class="icon-button">
+                <img src="data:image/png;base64,{keyboard_icon}" alt="Keyboard Icon">
+                Text Input
+            </button>
+            """, unsafe_allow_html=True)
+            st.text_input("Type Here:")
+        
+        # Display hand icon for sign language input in the third column
+        with col3:
+            st.markdown(f"""
+            <button class="icon-button">
+                <img src="data:image/png;base64,{hand_icon}" alt="Hand Icon">
+                Sign Language Input
+            </button>
+            """, unsafe_allow_html=True)
+            # Placeholder for sign language input
+            st.write("Sign language input selected!")
+    
+    elif st.session_state['pet_design'] == 'premade':
+        st.title("Choose Your Pet")
+        
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            if st.button("Pet 1"):
+                st.write("You chose Pet 1!")
+        with col2:
+            if st.button("Pet 2"):
+                st.write("You chose Pet 2!")
+        with col3:
+            if st.button("Pet 3"):
+                st.write("You chose Pet 3!")
