@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:91596-60540593-1c65-4e29-97e7-a71374ac4a38",
   "id": "91920605405931c654e2997e7a71374ac4a38",
-  "revision": "91595605405931c654e2997e7a71374ac4a38",
+  "revision": "15126690eba6ebafc446949d49d9cf81280a94",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -31,12 +31,7 @@
   "projectFormatType": "separated_files",
   "usingPatchesV2": true,
   "visual_programming": {
-    "graphs": [
-      {
-        "modelName": "patch_graph",
-        "identifier": "patch_graph:91686-60540593-1c65-4e29-97e7-a71374ac4a38"
-      }
-    ]
+    "sectionFileLocation": "AR-Pet-Game.patches"
   },
   "children": [
     {
@@ -165,7 +160,7 @@
       "effectUsesCameraControl": false,
       "effectUsesCameraInfoScriptingModule": false,
       "effectUsesCameraShare": false,
-      "effectUsesComponentEvaluation": false,
+      "effectUsesComponentEvaluation": true,
       "effectUsesComposedLocally": false,
       "effectUsesComposedMaterial": false,
       "effectUsesControllers": false,
@@ -359,7 +354,7 @@
       "effectUsesTexturesScriptingModule": false,
       "effectUsesTimeScriptingModule": false,
       "effectUsesToasterTracking": false,
-      "effectUsesTouchGestures": false,
+      "effectUsesTouchGestures": true,
       "effectUsesTwoDimensionalText": false,
       "effectUsesTypeScript": false,
       "effectUsesUiCore": false,
@@ -441,7 +436,7 @@
       "touchGesturesSupportsPinch": false,
       "touchGesturesSupportsRawTouch": false,
       "touchGesturesSupportsRotate": false,
-      "touchGesturesSupportsTap": false,
+      "touchGesturesSupportsTap": true,
       "whitelistedDomains": null,
       "witAppId": null,
       "witClientToken": null,
