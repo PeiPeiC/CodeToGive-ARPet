@@ -29,25 +29,25 @@ st.title("Welcome to AR Pet Game!")
 st.subheader("Choose your way to play:")
 
 # Display microphone icon for voice input
-mic_icon = image_to_data_uri("path_to_microphone_icon.png")
+mic_icon = image_to_data_uri("icons/microphone_icon.jpg")
 if st.button("", on_click=None, help=None, disabled=False, use_container_width=True, key=None):
     st.write("Voice input selected!")
-st.markdown(f'<img src="data:image/png;base64,{mic_icon}" width="100">', unsafe_allow_html=True)
+st.markdown(f'<img src="data:image/jpeg;base64,{mic_icon}" width="100">', unsafe_allow_html=True)
 st.write("Voice Input")
 
 # Display keyboard icon for text input
-keyboard_icon = image_to_data_uri("path_to_keyboard_icon.png")
+keyboard_icon = image_to_data_uri("icons/keyboard_icon.png")
 if st.button("", on_click=None, help=None, disabled=False, use_container_width=True, key=None):
     st.write("Text input selected!")
 st.markdown(f'<img src="data:image/png;base64,{keyboard_icon}" width="100">', unsafe_allow_html=True)
 st.write("Text Input")
 
-# Display hand icon for sign language input
-hand_icon = image_to_data_uri("path_to_hand_icon.png")
-if st.button("", on_click=None, help=None, disabled=False, use_container_width=True, key=None):
-    st.write("Sign language input selected!")
-st.markdown(f'<img src="data:image/png;base64,{hand_icon}" width="100">', unsafe_allow_html=True)
-st.write("Sign Language Input")
+# # Display hand icon for sign language input
+# hand_icon = image_to_data_uri("path_to_hand_icon.png")
+# if st.button("", on_click=None, help=None, disabled=False, use_container_width=True, key=None):
+#     st.write("Sign language input selected!")
+# st.markdown(f'<img src="data:image/png;base64,{hand_icon}" width="100">', unsafe_allow_html=True)
+# st.write("Sign Language Input")
 
 # Display footer
 st.markdown(
