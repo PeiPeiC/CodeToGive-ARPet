@@ -4,7 +4,7 @@
   "identifier": "metallicRoughnessPbrMaterial:96258-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
   "alphaTestEnabled": false,
   "alphaTestThreshold": 0,
-  "baseColorFactor": "0xffcccccc",
+  "baseColorFactor": "0xffcacaca",
   "baseColorTextureName": "dependent_texture_model:92381-0bcd947f-53a6-4825-b75b-8f688eb174d7",
   "baseColorTextureTransform": {
     "offsetU": 0,
@@ -18,7 +18,7 @@
   "cullMode": "back",
   "diffuseEnvironmentTextureTransform": {
     "rotationX": 0,
-    "rotationY": 4.829227183728646,
+    "rotationY": 6.283185307179586,
     "rotationZ": 0
   },
   "diffuseTextureTransform": {
@@ -77,7 +77,7 @@
   "roughnessFactor": 0.728301465511322,
   "specularEnvironmentTextureTransform": {
     "rotationX": 0,
-    "rotationY": 4.829227183728646,
+    "rotationY": 6.283185307179586,
     "rotationZ": 0
   },
   "transparency": 1,

@@ -194,9 +194,9 @@
                     "rx": 0,
                     "ry": 0,
                     "rz": 0,
-                    "sx": 3.509580039917637E-7,
-                    "sy": 3.509580039917637E-7,
-                    "sz": 3.509580039917637E-7,
+                    "sx": 0.0005924170836806297,
+                    "sy": 0.0005924170836806297,
+                    "sz": 0.0005924170836806297,
                     "x": 0,
                     "y": 0,
                     "z": 0
@@ -556,7 +556,7 @@
                   "cameraVisibility": "back|front",
                   "height": 844,
                   "hidden": false,
-                  "layerIdentifier": "layer0",
+                  "layerIdentifier": "buttonLayer",
                   "outputVisibility": "preview|capture",
                   "physicsEnabled": false,
                   "sizingMode": "full_screen",
@@ -577,7 +577,7 @@
                   "children": [
                     {
                       "modelName": "rectangle_model",
-                      "name": "dieButton",
+                      "name": "walkButton",
                       "identifier": "rectangle_model:161519-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                       "animationMask": {
                         "position": false,
@@ -592,12 +592,12 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100
+                        "value": 100.00006
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
                       "isMaterialIdentifierEnabled": true,
-                      "layerIdentifier": "layer0",
+                      "layerIdentifier": "buttonLayer",
                       "locksAspectRatio": false,
                       "materialIdentifier": "defaultMaterial:109284-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                       "outputVisibility": "preview|capture",
@@ -613,11 +613,11 @@
                       "pinnedHorizontalCenterValue": {
                         "unit": {
                           "multiplier": 1,
-                          "unitBase": 10
+                          "unitBase": 20
                         },
-                        "value": 0
+                        "value": -37.179483266977165
                       },
-                      "pinnedLeft": true,
+                      "pinnedLeft": false,
                       "pinnedLeftValue": {
                         "unit": {
                           "multiplier": 1,
@@ -633,20 +633,20 @@
                         },
                         "value": 0
                       },
-                      "pinnedTop": true,
+                      "pinnedTop": false,
                       "pinnedTopValue": {
                         "unit": {
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 686
+                        "value": 0
                       },
                       "pinnedVerticalCenterValue": {
                         "unit": {
                           "multiplier": 1,
-                          "unitBase": 10
+                          "unitBase": 20
                         },
-                        "value": 0
+                        "value": 37.20379502369669
                       },
                       "positionX": {
                         "unit": {
@@ -673,7 +673,7 @@
                         "sx": 1,
                         "sy": 1,
                         "sz": 1,
-                        "x": 0,
+                        "x": 0.0000152587890625,
                         "y": 686,
                         "z": 0.00006103515625
                       },
@@ -705,12 +705,12 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100
+                        "value": 100.00006
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
                       "isMaterialIdentifierEnabled": true,
-                      "layerIdentifier": "layer0",
+                      "layerIdentifier": "buttonLayer",
                       "locksAspectRatio": false,
                       "materialIdentifier": "defaultMaterial:161568-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                       "outputVisibility": "preview|capture",
@@ -726,17 +726,17 @@
                       "pinnedHorizontalCenterValue": {
                         "unit": {
                           "multiplier": 1,
-                          "unitBase": 10
+                          "unitBase": 20
                         },
                         "value": 0
                       },
-                      "pinnedLeft": true,
+                      "pinnedLeft": false,
                       "pinnedLeftValue": {
                         "unit": {
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 145
+                        "value": 0
                       },
                       "pinnedRight": false,
                       "pinnedRightValue": {
@@ -746,20 +746,20 @@
                         },
                         "value": 0
                       },
-                      "pinnedTop": true,
+                      "pinnedTop": false,
                       "pinnedTopValue": {
                         "unit": {
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 686
+                        "value": 0
                       },
                       "pinnedVerticalCenterValue": {
                         "unit": {
                           "multiplier": 1,
-                          "unitBase": 10
+                          "unitBase": 20
                         },
-                        "value": 0
+                        "value": 37.20379502369669
                       },
                       "positionX": {
                         "unit": {
@@ -803,7 +803,7 @@
                     },
                     {
                       "modelName": "rectangle_model",
-                      "name": "hitButton",
+                      "name": "rollButton",
                       "identifier": "rectangle_model:164275-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                       "animationMask": {
                         "position": false,
@@ -818,12 +818,12 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100
+                        "value": 100.00006
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
                       "isMaterialIdentifierEnabled": true,
-                      "layerIdentifier": "layer0",
+                      "layerIdentifier": "buttonLayer",
                       "locksAspectRatio": false,
                       "materialIdentifier": "defaultMaterial:163071-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                       "outputVisibility": "preview|capture",
@@ -839,17 +839,17 @@
                       "pinnedHorizontalCenterValue": {
                         "unit": {
                           "multiplier": 1,
-                          "unitBase": 10
+                          "unitBase": 20
                         },
-                        "value": 0
+                        "value": 37.17948717948718
                       },
-                      "pinnedLeft": true,
+                      "pinnedLeft": false,
                       "pinnedLeftValue": {
                         "unit": {
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 290
+                        "value": 0
                       },
                       "pinnedRight": false,
                       "pinnedRightValue": {
@@ -859,20 +859,392 @@
                         },
                         "value": 0
                       },
-                      "pinnedTop": true,
+                      "pinnedTop": false,
                       "pinnedTopValue": {
                         "unit": {
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 686
+                        "value": 0
                       },
                       "pinnedVerticalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 37.20379502369669
+                      },
+                      "positionX": {
                         "unit": {
                           "multiplier": 1,
                           "unitBase": 10
                         },
                         "value": 0
+                      },
+                      "positionY": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "rotation": 0,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "tags": [],
+                      "transform": {
+                        "rx": 0,
+                        "ry": 0,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 290,
+                        "y": 686,
+                        "z": 0
+                      },
+                      "usesFlexibleHeight": false,
+                      "usesFlexibleWidth": false,
+                      "verticalAlignment": "center",
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 100
+                      }
+                    }
+                  ]
+                },
+                {
+                  "modelName": "composition_model",
+                  "name": "MuskratButton",
+                  "identifier": "composition_model:132204-8797610e-c4fd-416e-a790-317261c3c0f9",
+                  "animationMask": {
+                    "position": false,
+                    "rotation": false,
+                    "scale": false
+                  },
+                  "cameraVisibility": "back|front",
+                  "height": 844,
+                  "hidden": false,
+                  "layerIdentifier": "buttonLayer",
+                  "outputVisibility": "preview|capture",
+                  "physicsEnabled": false,
+                  "sizingMode": "full_screen",
+                  "spaceMode": "camera_space",
+                  "tags": [],
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 0.0005924170836806297,
+                    "sy": 0.0005924170836806297,
+                    "sz": 0.0005924170836806297,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "width": 390,
+                  "children": [
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "walkButton",
+                      "identifier": "rectangle_model:132207-8797610e-c4fd-416e-a790-317261c3c0f9",
+                      "animationMask": {
+                        "position": false,
+                        "rotation": false,
+                        "scale": false
+                      },
+                      "aspectRatioValue": 1,
+                      "cameraVisibility": "back|front",
+                      "fillMode": "none",
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 100.00006
+                      },
+                      "hidden": false,
+                      "horizontalAlignment": "center",
+                      "isMaterialIdentifierEnabled": true,
+                      "layerIdentifier": "buttonLayer",
+                      "locksAspectRatio": false,
+                      "materialIdentifier": "defaultMaterial:109284-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
+                      "outputVisibility": "preview|capture",
+                      "physicsEnabled": false,
+                      "pinnedBottom": false,
+                      "pinnedBottomValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedHorizontalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": -37.179483266977165
+                      },
+                      "pinnedLeft": false,
+                      "pinnedLeftValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedRight": false,
+                      "pinnedRightValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedTop": false,
+                      "pinnedTopValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedVerticalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 37.20379502369669
+                      },
+                      "positionX": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "positionY": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "rotation": 0,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "tags": [],
+                      "transform": {
+                        "rx": 0,
+                        "ry": 0,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 0.0000152587890625,
+                        "y": 686,
+                        "z": 0.00006103515625
+                      },
+                      "usesFlexibleHeight": false,
+                      "usesFlexibleWidth": false,
+                      "verticalAlignment": "center",
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 100
+                      }
+                    },
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "jumpButton",
+                      "identifier": "rectangle_model:132210-8797610e-c4fd-416e-a790-317261c3c0f9",
+                      "animationMask": {
+                        "position": false,
+                        "rotation": false,
+                        "scale": false
+                      },
+                      "aspectRatioValue": 1,
+                      "cameraVisibility": "back|front",
+                      "fillMode": "none",
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 100.00006
+                      },
+                      "hidden": false,
+                      "horizontalAlignment": "center",
+                      "isMaterialIdentifierEnabled": true,
+                      "layerIdentifier": "buttonLayer",
+                      "locksAspectRatio": false,
+                      "materialIdentifier": "defaultMaterial:161568-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
+                      "outputVisibility": "preview|capture",
+                      "physicsEnabled": false,
+                      "pinnedBottom": false,
+                      "pinnedBottomValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedHorizontalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 0
+                      },
+                      "pinnedLeft": false,
+                      "pinnedLeftValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedRight": false,
+                      "pinnedRightValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedTop": false,
+                      "pinnedTopValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedVerticalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 37.20379502369669
+                      },
+                      "positionX": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "positionY": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "rotation": 0,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "tags": [],
+                      "transform": {
+                        "rx": 0,
+                        "ry": 0,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 145,
+                        "y": 686,
+                        "z": 0
+                      },
+                      "usesFlexibleHeight": false,
+                      "usesFlexibleWidth": false,
+                      "verticalAlignment": "center",
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 100
+                      }
+                    },
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "rollButton",
+                      "identifier": "rectangle_model:132213-8797610e-c4fd-416e-a790-317261c3c0f9",
+                      "animationMask": {
+                        "position": false,
+                        "rotation": false,
+                        "scale": false
+                      },
+                      "aspectRatioValue": 1,
+                      "cameraVisibility": "back|front",
+                      "fillMode": "none",
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 100.00006
+                      },
+                      "hidden": false,
+                      "horizontalAlignment": "center",
+                      "isMaterialIdentifierEnabled": true,
+                      "layerIdentifier": "buttonLayer",
+                      "locksAspectRatio": false,
+                      "materialIdentifier": "defaultMaterial:163071-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
+                      "outputVisibility": "preview|capture",
+                      "physicsEnabled": false,
+                      "pinnedBottom": false,
+                      "pinnedBottomValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedHorizontalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 37.17948717948718
+                      },
+                      "pinnedLeft": false,
+                      "pinnedLeftValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedRight": false,
+                      "pinnedRightValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedTop": false,
+                      "pinnedTopValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedVerticalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 37.20379502369669
                       },
                       "positionX": {
                         "unit": {
@@ -1026,7 +1398,7 @@
               "cameraVisibility": "back|front",
               "depth": 0.9361807107925415,
               "height": 0.4976491332054138,
-              "hidden": true,
+              "hidden": false,
               "layerIdentifier": "layer0",
               "outputVisibility": "preview|capture",
               "physicsEnabled": false,
@@ -1672,7 +2044,7 @@
               "cameraVisibility": "back|front",
               "depth": 1.4148372411727905,
               "height": 0.39929986000061035,
-              "hidden": false,
+              "hidden": true,
               "layerIdentifier": "layer0",
               "outputVisibility": "preview|capture",
               "physicsEnabled": false,
