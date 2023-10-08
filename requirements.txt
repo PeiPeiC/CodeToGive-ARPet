@@ -1,5 +1,4 @@
-python == 3.10.8
-pyaiohttp==3.8.5
+aiohttp==3.8.5
 aiosignal==1.3.1
 altair==5.1.2
 anyio==4.0.0
