@@ -964,7 +964,7 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006
+                        "value": 100.00006103515625
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
@@ -1077,7 +1077,7 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006
+                        "value": 100.00006103515625
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
@@ -1190,7 +1190,7 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006
+                        "value": 100.00006103515625
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
@@ -1398,7 +1398,7 @@
               "cameraVisibility": "back|front",
               "depth": 0.9361807107925415,
               "height": 0.4976491332054138,
-              "hidden": false,
+              "hidden": true,
               "layerIdentifier": "layer0",
               "outputVisibility": "preview|capture",
               "physicsEnabled": false,
@@ -2044,7 +2044,7 @@
               "cameraVisibility": "back|front",
               "depth": 1.4148372411727905,
               "height": 0.39929986000061035,
-              "hidden": true,
+              "hidden": false,
               "layerIdentifier": "layer0",
               "outputVisibility": "preview|capture",
               "physicsEnabled": false,
