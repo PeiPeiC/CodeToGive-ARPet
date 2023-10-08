@@ -8,6 +8,13 @@ from pydub import AudioSegment
 import io
 import os
 
+# Constants
+ICONS = {
+    "Voice Input": "./icons/microphone_icon.png",
+    "Text Input": "./icons/keyboard_icon.png",
+    "Sign Language Input": "./icons/hand_icon.png"
+}
+
 # Define function to create a data URI for an image
 def image_to_data_uri(img_path):
     with open(img_path, "rb") as img_file:
@@ -19,7 +26,6 @@ keyboard_icon = image_to_data_uri("./icons/keyboard_icon.png")
 hand_icon = image_to_data_uri("./icons/hand_icon.png")
 
 
-
 def display_login_page():
     st.title("Welcome to AR Pet Game!")
     st.subheader("Please login or signup to continue.")
@@ -29,21 +35,6 @@ def display_login_page():
     for method in login_methods:
         if st.button(method):
             st.session_state['logged_in'] = True
-
-
-def get_text_from_audio(audio_bytes):
-    r = sr.Recognizer()
-    with sr.AudioFile(audio_bytes) as source:
-        audio_data = r.record(source)
-        try:
-            text = r.recognize_google(audio_data)
-            return text
-        except sr.UnknownValueError:
-            st.error("Google Speech Recognition could not understand the audio.")
-        except sr.RequestError:
-            st.error("Could not request results from Google Speech Recognition service.")
-    return None
-
 
 def display_pet_design_page():
     st.title("Design Your Pet!")
@@ -96,7 +87,7 @@ st.markdown(
             padding: 15px 30px;
             font-size: 20px;
             border: none;
-            background-color: #FEC773; /*  background for buttons */
+            background-color: #FEC773; /*  background colour for buttons */
             cursor: pointer;
             display: block; /* Make buttons block-level elements */
             width: 80%; /* Set a fixed width */
@@ -120,7 +111,7 @@ st.markdown(
 # Function to generate image from text using OpenAI
 def generate_image_from_text(user_input):
     try:
-        openai.api_key = "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"  # Replace with your OpenAI API key
+        openai.api_key = "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"
         res = openai.Image.create(
             prompt=user_input,
             n=1,
@@ -143,10 +134,8 @@ def convert_to_wav(audio_bytes):
 
 def get_text_from_audio(audio_bytes):
     r = sr.Recognizer()
-    
     # Convert audio to WAV format
-    wav_filename = convert_to_wav(audio_bytes)
-    
+    wav_filename = convert_to_wav(audio_bytes)    
     try:
         with sr.AudioFile(wav_filename) as source:
             audio_data = r.record(source)
@@ -159,8 +148,7 @@ def get_text_from_audio(audio_bytes):
                 st.error("Could not request results from Google Speech Recognition service.")
     finally:
         # Ensure the temporary file is deleted
-        os.remove(wav_filename)
-    
+        os.remove(wav_filename)    
     return None
 
 # Main App Logic
