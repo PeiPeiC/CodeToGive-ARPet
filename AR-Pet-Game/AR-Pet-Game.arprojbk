@@ -136,14 +136,6 @@
       },
       {
         "modelName": "patch_connection_model",
-        "identifier": "patch_connection_model:111865-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-        "fromPatch": "template_patch_model:111863-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-        "fromPort": "100",
-        "toPatch": "template_patch_model:106057-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-        "toPort": "2"
-      },
-      {
-        "modelName": "patch_connection_model",
         "identifier": "patch_connection_model:1196932-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
         "fromPatch": "template_patch_model:1196928-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
         "fromPort": "100",
@@ -196,6 +188,30 @@
         "fromPatch": "producer_patch_model:120513-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
         "fromPort": "101",
         "toPatch": "template_patch_model:100222-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:125713-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "fromPatch": "producer_patch_model:125709-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:125711-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:125719-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "fromPatch": "producer_patch_model:125715-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:125717-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "toPort": "1"
+      },
+      {
+        "modelName": "patch_connection_model",
+        "identifier": "patch_connection_model:125725-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "fromPatch": "producer_patch_model:125721-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "fromPort": "100",
+        "toPatch": "template_patch_model:125723-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
         "toPort": "1"
       },
       {
@@ -492,6 +508,9 @@
           "producer_patch_model:104096-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
           "producer_patch_model:1196926-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
           "producer_patch_model:120513-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
+          "producer_patch_model:125709-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "producer_patch_model:125715-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "producer_patch_model:125721-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
           "producer_patch_model:157441-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
           "producer_patch_model:157880-90eba6eb-afc4-4694-9d49-d9cf81280a94",
           "producer_patch_model:159002-90eba6eb-afc4-4694-9d49-d9cf81280a94",
@@ -509,13 +528,14 @@
           "template_patch_model:100236-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
           "template_patch_model:100240-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
           "template_patch_model:100242-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
-          "template_patch_model:106057-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
           "template_patch_model:107588-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
-          "template_patch_model:111863-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
           "template_patch_model:1196928-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
           "template_patch_model:1196930-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
           "template_patch_model:1196936-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
           "template_patch_model:1196944-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+          "template_patch_model:125711-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "template_patch_model:125717-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "template_patch_model:125723-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
           "template_patch_model:156764-90eba6eb-afc4-4694-9d49-d9cf81280a94",
           "template_patch_model:157868-90eba6eb-afc4-4694-9d49-d9cf81280a94",
           "template_patch_model:157874-90eba6eb-afc4-4694-9d49-d9cf81280a94",
@@ -617,6 +637,36 @@
         "position": [
           483.73846435546875,
           548.3153686523438
+        ]
+      },
+      {
+        "modelName": "producer_patch_model",
+        "name": "appleButton",
+        "identifier": "producer_patch_model:125709-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "object": "rectangle_model:123643-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "position": [
+          -52,
+          2444
+        ]
+      },
+      {
+        "modelName": "producer_patch_model",
+        "name": "lemonButton",
+        "identifier": "producer_patch_model:125715-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "object": "rectangle_model:123647-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "position": [
+          -52,
+          2612
+        ]
+      },
+      {
+        "modelName": "producer_patch_model",
+        "name": "carrotButton",
+        "identifier": "producer_patch_model:125721-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "object": "rectangle_model:123651-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "position": [
+          -52,
+          2876
         ]
       },
       {
@@ -817,32 +867,6 @@
       },
       {
         "modelName": "template_patch_model",
-        "name": "Texture Transform",
-        "identifier": "template_patch_model:106057-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-        "position": [
-          356,
-          2084
-        ],
-        "templateId": "builtin.shaders.textureTransform",
-        "values": [
-          {
-            "port": "1",
-            "value": {
-              "t": "string",
-              "v": "texture:101751-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
-            }
-          },
-          {
-            "port": "2",
-            "value": {
-              "t": "double",
-              "v": 1
-            }
-          }
-        ]
-      },
-      {
-        "modelName": "template_patch_model",
         "name": "Screen Tap and Hold",
         "identifier": "template_patch_model:107588-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
         "position": [
@@ -850,28 +874,6 @@
           -676
         ],
         "templateId": "builtin.longPressGesture"
-      },
-      {
-        "modelName": "template_patch_model",
-        "name": "2D Transform Pack",
-        "identifier": "template_patch_model:111863-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-        "position": [
-          20,
-          2252
-        ],
-        "templateId": "builtin.2DTransformPack",
-        "values": [
-          {
-            "port": "1",
-            "value": {
-              "t": "vec2",
-              "v": [
-                0.5,
-                0.5
-              ]
-            }
-          }
-        ]
       },
       {
         "modelName": "template_patch_model",
@@ -913,6 +915,36 @@
         ],
         "templateId": "builtin.value",
         "variantInfo": "float"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Object Tap",
+        "identifier": "template_patch_model:125711-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "position": [
+          140,
+          2444
+        ],
+        "templateId": "builtin.sceneObjectTapGesture"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Object Tap",
+        "identifier": "template_patch_model:125717-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "position": [
+          140,
+          2612
+        ],
+        "templateId": "builtin.sceneObjectTapGesture"
+      },
+      {
+        "modelName": "template_patch_model",
+        "name": "Object Tap",
+        "identifier": "template_patch_model:125723-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+        "position": [
+          164,
+          2876
+        ],
+        "templateId": "builtin.sceneObjectTapGesture"
       },
       {
         "modelName": "template_patch_model",
@@ -1348,6 +1380,188 @@
               "pixelsWide": 1024
             }
           ]
+        },
+        {
+          "modelName": "texture",
+          "name": "carrot",
+          "identifier": "texture:125699-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetDataHash": "e3ec95623352dccede6c98f9c9f1409d",
+          "assetLocator": "textures/carrot.png",
+          "fileLocator": {
+            "path": "textures/carrot.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 1024,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "e3ec95623352dccede6c98f9c9f1409d",
+              "colorCount": 43981,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 3.6179934393953777,
+              "pixelsHigh": 1024,
+              "pixelsWide": 1024
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "apple",
+          "identifier": "texture:125703-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetDataHash": "db8d3ffc15ccd6024c0d64465234b2b3",
+          "assetLocator": "textures/apple.png",
+          "fileLocator": {
+            "path": "textures/apple.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 1024,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "db8d3ffc15ccd6024c0d64465234b2b3",
+              "colorCount": 28569,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 3.751160902875372,
+              "pixelsHigh": 1024,
+              "pixelsWide": 1024
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "lemon",
+          "identifier": "texture:125707-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetDataHash": "f2d415d03ed83e96a1fa1e68fcc2248e",
+          "assetLocator": "textures/lemon.png",
+          "fileLocator": {
+            "path": "textures/lemon.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 1024,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "f2d415d03ed83e96a1fa1e68fcc2248e",
+              "colorCount": 23166,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 3.3849961997722837,
+              "pixelsHigh": 1024,
+              "pixelsWide": 1024
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "TextureDiff2",
+          "identifier": "texture:125835-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetDataHash": "b41c3ccb450a9611fca856c9973aa036",
+          "assetLocator": "textures/TextureDiff2.png",
+          "fileLocator": {
+            "path": "textures/TextureDiff2.texture"
+          },
+          "height": 512,
+          "isExternalAsset": true,
+          "width": 512,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "b41c3ccb450a9611fca856c9973aa036",
+              "colorCount": 663,
+              "detectedAlphaChannel": "no_alpha",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 2.2915805894321317,
+              "pixelsHigh": 512,
+              "pixelsWide": 512
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "TextureDiff3",
+          "identifier": "texture:125839-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetDataHash": "670a700f2ef3354e36b42070aa5717a2",
+          "assetLocator": "textures/TextureDiff3.png",
+          "fileLocator": {
+            "path": "textures/TextureDiff3.texture"
+          },
+          "height": 512,
+          "isExternalAsset": true,
+          "width": 512,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "670a700f2ef3354e36b42070aa5717a2",
+              "colorCount": 123,
+              "detectedAlphaChannel": "no_alpha",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 2.7754896901798896,
+              "pixelsHigh": 512,
+              "pixelsWide": 512
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "TextureDiff4",
+          "identifier": "texture:125843-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetDataHash": "f6f004d586dc45a2683fcb5da0afca3e",
+          "assetLocator": "textures/TextureDiff4.png",
+          "fileLocator": {
+            "path": "textures/TextureDiff4.texture"
+          },
+          "height": 512,
+          "isExternalAsset": true,
+          "width": 512,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "f6f004d586dc45a2683fcb5da0afca3e",
+              "colorCount": 569,
+              "detectedAlphaChannel": "no_alpha",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 3.8423935167855228,
+              "pixelsHigh": 512,
+              "pixelsWide": 512
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "TextureDiff5",
+          "identifier": "texture:125847-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetDataHash": "f5bb0c101d47ee14774722ab8de0f87f",
+          "assetLocator": "textures/TextureDiff5.png",
+          "fileLocator": {
+            "path": "textures/TextureDiff5.texture"
+          },
+          "height": 512,
+          "isExternalAsset": true,
+          "width": 512,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "f5bb0c101d47ee14774722ab8de0f87f",
+              "colorCount": 1166,
+              "detectedAlphaChannel": "no_alpha",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 3.903471860658573,
+              "pixelsHigh": 512,
+              "pixelsWide": 512
+            }
+          ]
         }
       ]
     },
@@ -1392,6 +1606,7 @@
                       "modelName": "ambient_light_source_model",
                       "name": "ambientLight0",
                       "identifier": "ambient_light_source_model:91682-60540593-1c65-4e29-97e7-a71374ac4a38",
+                      "intensity": 0.8222748637199402,
                       "layerIdentifier": "layer0"
                     },
                     {
@@ -1401,22 +1616,139 @@
                       "intensity": 0.800000011920929,
                       "layerIdentifier": "layer0",
                       "transform": {
-                        "rx": -0.7853981633974483,
-                        "ry": 0.08726646259971647,
+                        "rx": -0.7853981852531433,
+                        "ry": 0.0872664526104927,
                         "rz": 0,
                         "sx": 1,
                         "sy": 1,
                         "sz": 1,
-                        "x": 0.03,
+                        "x": 0.029999999329447746,
                         "y": 0.25,
-                        "z": 0.3
+                        "z": 0.30000001192092896
                       }
                     },
                     {
                       "modelName": "composition_model",
-                      "name": "canvas0",
+                      "name": "FoodButtons",
+                      "identifier": "composition_model:123639-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "height": 844,
+                      "layerIdentifier": "layer0",
+                      "transform": {
+                        "rx": 0,
+                        "ry": -0,
+                        "rz": 0,
+                        "sx": 3.509580039917637E-7,
+                        "sy": 3.509580039917637E-7,
+                        "sz": 3.509580039917637E-7,
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                      },
+                      "width": 390,
+                      "children": [
+                        {
+                          "modelName": "rectangle_model",
+                          "name": "appleButton",
+                          "identifier": "rectangle_model:123643-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "layerIdentifier": "layer0",
+                          "materialIdentifier": "defaultMaterial:123642-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "pinnedLeft": true,
+                          "pinnedTop": true,
+                          "pinnedTopValue": {
+                            "unit": {
+                              "multiplier": 1,
+                              "unitBase": 10
+                            },
+                            "value": 686
+                          },
+                          "transform": {
+                            "rx": 0,
+                            "ry": 0,
+                            "rz": 0,
+                            "sx": 1,
+                            "sy": 1,
+                            "sz": 1,
+                            "x": 0,
+                            "y": 686,
+                            "z": 0.00006103515625
+                          }
+                        },
+                        {
+                          "modelName": "rectangle_model",
+                          "name": "lemonButton",
+                          "identifier": "rectangle_model:123647-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "layerIdentifier": "layer0",
+                          "materialIdentifier": "defaultMaterial:123646-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "pinnedLeft": true,
+                          "pinnedLeftValue": {
+                            "unit": {
+                              "multiplier": 1,
+                              "unitBase": 10
+                            },
+                            "value": 145
+                          },
+                          "pinnedTop": true,
+                          "pinnedTopValue": {
+                            "unit": {
+                              "multiplier": 1,
+                              "unitBase": 10
+                            },
+                            "value": 686
+                          },
+                          "transform": {
+                            "rx": 0,
+                            "ry": 0,
+                            "rz": 0,
+                            "sx": 1,
+                            "sy": 1,
+                            "sz": 1,
+                            "x": 145,
+                            "y": 686,
+                            "z": 0
+                          }
+                        },
+                        {
+                          "modelName": "rectangle_model",
+                          "name": "carrotButton",
+                          "identifier": "rectangle_model:123651-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "layerIdentifier": "layer0",
+                          "materialIdentifier": "defaultMaterial:123650-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "pinnedLeft": true,
+                          "pinnedLeftValue": {
+                            "unit": {
+                              "multiplier": 1,
+                              "unitBase": 10
+                            },
+                            "value": 290
+                          },
+                          "pinnedTop": true,
+                          "pinnedTopValue": {
+                            "unit": {
+                              "multiplier": 1,
+                              "unitBase": 10
+                            },
+                            "value": 686
+                          },
+                          "transform": {
+                            "rx": 0,
+                            "ry": 0,
+                            "rz": 0,
+                            "sx": 1,
+                            "sy": 1,
+                            "sz": 1,
+                            "x": 290,
+                            "y": 686,
+                            "z": 0
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "modelName": "composition_model",
+                      "name": "GeckoButtons",
                       "identifier": "composition_model:161521-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                       "height": 844,
+                      "hidden": true,
                       "layerIdentifier": "layer0",
                       "transform": {
                         "rx": 0,
@@ -1433,7 +1765,7 @@
                       "children": [
                         {
                           "modelName": "rectangle_model",
-                          "name": "walkButton",
+                          "name": "dieButton",
                           "identifier": "rectangle_model:161519-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                           "layerIdentifier": "layer0",
                           "materialIdentifier": "defaultMaterial:109284-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
@@ -1551,6 +1883,7 @@
               "modelName": "sceneObject",
               "name": "animal_holder[Put_Pet_Here]",
               "identifier": "sceneObject:92028-60540593-1c65-4e29-97e7-a71374ac4a38",
+              "hidden": true,
               "layerIdentifier": "layer0",
               "children": [
                 {
@@ -1577,9 +1910,9 @@
                       "layerIdentifier": "layer0",
                       "transform": {
                         "rx": -1.5707964897155762,
-                        "ry": 0,
+                        "ry": -0,
                         "rz": 0,
-                        "sx": 39.999996185302734,
+                        "sx": 39.99999237060547,
                         "sy": 39.999996185302734,
                         "sz": 39.999996185302734,
                         "x": 0,
@@ -1787,6 +2120,17 @@
                             "joint:93125-0bcd947f-53a6-4825-b75b-8f688eb174d7"
                           ],
                           "layerIdentifier": "layer0",
+                          "transform": {
+                            "rx": 0,
+                            "ry": -0,
+                            "rz": 0,
+                            "sx": 1,
+                            "sy": 0.9999999403953552,
+                            "sz": 0.9999999403953552,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
                           "children": [
                             {
                               "modelName": "joint",
@@ -1799,6 +2143,17 @@
                                 "scale": true
                               },
                               "layerIdentifier": "layer0",
+                              "transform": {
+                                "rx": 1.4210853021136109E-14,
+                                "ry": -0,
+                                "rz": 0,
+                                "sx": 1,
+                                "sy": 1.0000001192092896,
+                                "sz": 1.0000001192092896,
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                              },
                               "children": [
                                 {
                                   "modelName": "joint",
@@ -1813,12 +2168,12 @@
                                   "layerIdentifier": "layer0",
                                   "transform": {
                                     "rx": 1.5707964897155762,
-                                    "ry": 0,
+                                    "ry": -0,
                                     "rz": 0,
-                                    "sx": 1,
-                                    "sy": 0.9816107153892517,
-                                    "sz": 1,
-                                    "x": -5.580893888841512E-20,
+                                    "sx": 0.9999999403953552,
+                                    "sy": 0.9816106557846069,
+                                    "sz": 0.9999999403953552,
+                                    "x": -5.580894535076366E-20,
                                     "y": 0.0001231044443557039,
                                     "z": 0.008038675412535667
                                   },
@@ -1835,15 +2190,15 @@
                                       },
                                       "layerIdentifier": "layer0",
                                       "transform": {
-                                        "rx": -0.9074093103408813,
+                                        "rx": -0.9074093699455261,
                                         "ry": -8.867532841350112E-8,
                                         "rz": -3.141592264175415,
-                                        "sx": 1,
-                                        "sy": 1,
+                                        "sx": 1.0000001192092896,
+                                        "sy": 1.0000001192092896,
                                         "sz": 1,
-                                        "x": -1.5401976343706078E-19,
+                                        "x": -1.5401978928645492E-19,
                                         "y": -0.002812816994264722,
-                                        "z": -0.005275700706988573
+                                        "z": -0.00527570117264986
                                       },
                                       "children": [
                                         {
@@ -1858,15 +2213,15 @@
                                           },
                                           "layerIdentifier": "layer0",
                                           "transform": {
-                                            "rx": -0.16346387565135956,
-                                            "ry": -0.20772883296012878,
-                                            "rz": 0.008912458084523678,
+                                            "rx": -0.16346372663974762,
+                                            "ry": -0.2077288031578064,
+                                            "rz": 0.008912436664104462,
                                             "sx": 1,
-                                            "sy": 0.9999999403953552,
-                                            "sz": 1,
-                                            "x": 8.88178366760566E-17,
-                                            "y": 0.004889351781457663,
-                                            "z": 4.440891999238953E-18
+                                            "sy": 0.9999997019767761,
+                                            "sz": 0.9999999403953552,
+                                            "x": -8.48868427946331E-17,
+                                            "y": 0.004889350850135088,
+                                            "z": 1.1719487880146318E-10
                                           }
                                         }
                                       ]
@@ -1884,14 +2239,14 @@
                                       "layerIdentifier": "layer0",
                                       "transform": {
                                         "rx": -0.8083372116088867,
-                                        "ry": -0.11501023918390274,
-                                        "rz": -0.7871266603469849,
+                                        "ry": -0.11501025408506393,
+                                        "rz": -0.7871266007423401,
                                         "sx": 0.9999999403953552,
                                         "sy": 1,
-                                        "sz": 1,
-                                        "x": 0.0023889222647994757,
+                                        "sz": 1.0000001192092896,
+                                        "x": 0.0023889224976301193,
                                         "y": 0.0033819961827248335,
-                                        "z": 0.004280413966625929
+                                        "z": 0.004280414432287216
                                       }
                                     },
                                     {
@@ -1907,14 +2262,14 @@
                                       "layerIdentifier": "layer0",
                                       "transform": {
                                         "rx": -0.8083372116088867,
-                                        "ry": 0.11501023918390274,
-                                        "rz": 0.7871266603469849,
+                                        "ry": 0.11501025408506393,
+                                        "rz": 0.7871266007423401,
                                         "sx": 0.9999999403953552,
                                         "sy": 1,
-                                        "sz": 1,
-                                        "x": -0.0023889222647994757,
+                                        "sz": 1.0000001192092896,
+                                        "x": -0.0023889224976301193,
                                         "y": 0.0033819961827248335,
-                                        "z": 0.004280413966625929
+                                        "z": 0.004280414432287216
                                       }
                                     },
                                     {
@@ -1929,15 +2284,15 @@
                                       },
                                       "layerIdentifier": "layer0",
                                       "transform": {
-                                        "rx": 0.33637285232543945,
+                                        "rx": 0.33637282252311707,
                                         "ry": -1.4253373592509888E-7,
                                         "rz": 3.141592264175415,
-                                        "sx": 1,
-                                        "sy": 0.9999999403953552,
-                                        "sz": 0.9999999403953552,
-                                        "x": 0.002058652928099036,
+                                        "sx": 1.0000001192092896,
+                                        "sy": 0.9999998807907104,
+                                        "sz": 1,
+                                        "x": 0.00205865316092968,
                                         "y": -0.002568118507042527,
-                                        "z": 0.0026259899605065584
+                                        "z": 0.002625990193337202
                                       }
                                     },
                                     {
@@ -1952,15 +2307,15 @@
                                       },
                                       "layerIdentifier": "layer0",
                                       "transform": {
-                                        "rx": 0,
+                                        "rx": 1.1581666988023497E-14,
                                         "ry": 1.509957741063772E-7,
                                         "rz": -3.141592502593994,
-                                        "sx": 1,
+                                        "sx": 1.0000001192092896,
                                         "sy": 1,
-                                        "sz": 1,
-                                        "x": 0.004302271641790867,
+                                        "sz": 1.0000001192092896,
+                                        "x": 0.004302272107452154,
                                         "y": -0.003297490766271949,
-                                        "z": -0.0034474479034543037
+                                        "z": -0.003447448369115591
                                       }
                                     },
                                     {
@@ -1975,15 +2330,15 @@
                                       },
                                       "layerIdentifier": "layer0",
                                       "transform": {
-                                        "rx": 0.33637285232543945,
+                                        "rx": 0.33637282252311707,
                                         "ry": 1.4253373592509888E-7,
                                         "rz": -3.141592264175415,
-                                        "sx": 1,
-                                        "sy": 0.9999999403953552,
-                                        "sz": 0.9999999403953552,
-                                        "x": -0.002058652928099036,
+                                        "sx": 1.0000001192092896,
+                                        "sy": 0.9999998807907104,
+                                        "sz": 1,
+                                        "x": -0.00205865316092968,
                                         "y": -0.002568118507042527,
-                                        "z": 0.0026259899605065584
+                                        "z": 0.002625990193337202
                                       }
                                     },
                                     {
@@ -1998,15 +2353,15 @@
                                       },
                                       "layerIdentifier": "layer0",
                                       "transform": {
-                                        "rx": 0,
+                                        "rx": 1.1581661058792866E-14,
                                         "ry": -1.509957741063772E-7,
                                         "rz": -3.141592502593994,
-                                        "sx": 1,
+                                        "sx": 1.0000001192092896,
                                         "sy": 1,
-                                        "sz": 1,
-                                        "x": -0.004302271641790867,
+                                        "sz": 1.0000001192092896,
+                                        "x": -0.004302272107452154,
                                         "y": -0.003297490766271949,
-                                        "z": -0.0034474479034543037
+                                        "z": -0.003447448369115591
                                       }
                                     }
                                   ]
@@ -2029,9 +2384,9 @@
                       "skeletonIdentifier": "skeleton:93126-0bcd947f-53a6-4825-b75b-8f688eb174d7",
                       "transform": {
                         "rx": -1.5707964897155762,
-                        "ry": 0,
+                        "ry": -0,
                         "rz": 0,
-                        "sx": 39.99999237060547,
+                        "sx": 39.9999885559082,
                         "sy": 39.99999237060547,
                         "sz": 39.99999237060547,
                         "x": 0,
@@ -2098,9 +2453,9 @@
                       "layerIdentifier": "layer0",
                       "transform": {
                         "rx": -1.5707964897155762,
-                        "ry": 0,
+                        "ry": -0,
                         "rz": 0,
-                        "sx": 39.999996185302734,
+                        "sx": 39.99999237060547,
                         "sy": 39.999996185302734,
                         "sz": 39.999996185302734,
                         "x": 0,
@@ -2270,6 +2625,17 @@
                             "joint152865-2d0b996b-4c1d-4f26-88df-d5e74926bef2"
                           ],
                           "layerIdentifier": "layer0",
+                          "transform": {
+                            "rx": 0,
+                            "ry": -0,
+                            "rz": 0,
+                            "sx": 1,
+                            "sy": 0.9999999403953552,
+                            "sz": 0.9999999403953552,
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                          },
                           "children": [
                             {
                               "modelName": "joint",
@@ -2282,6 +2648,17 @@
                                 "scale": true
                               },
                               "layerIdentifier": "layer0",
+                              "transform": {
+                                "rx": 1.4210853021136109E-14,
+                                "ry": -0,
+                                "rz": 0,
+                                "sx": 1,
+                                "sy": 1.0000001192092896,
+                                "sz": 1.0000001192092896,
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                              },
                               "children": [
                                 {
                                   "modelName": "joint",
@@ -2296,11 +2673,11 @@
                                   "layerIdentifier": "layer0",
                                   "transform": {
                                     "rx": 1.5707964897155762,
-                                    "ry": 0,
+                                    "ry": -0,
                                     "rz": 0,
-                                    "sx": 1,
-                                    "sy": 1,
-                                    "sz": 1,
+                                    "sx": 0.9999999403953552,
+                                    "sy": 0.9999999403953552,
+                                    "sz": 0.9999999403953552,
                                     "x": 0,
                                     "y": 0,
                                     "z": 0.007450834382325411
@@ -2321,12 +2698,12 @@
                                         "rx": -1.4009578227996826,
                                         "ry": -6.582007472388796E-8,
                                         "rz": -3.141592264175415,
-                                        "sx": 1,
-                                        "sy": 1,
-                                        "sz": 1,
-                                        "x": -4.560869170415788E-19,
-                                        "y": -0.0011639940785244107,
-                                        "z": -0.007459713611751795
+                                        "sx": 1.0000001192092896,
+                                        "sy": 1.0000001192092896,
+                                        "sz": 1.0000001192092896,
+                                        "x": -4.560869687403671E-19,
+                                        "y": -0.0011639937292784452,
+                                        "z": -0.007459714543074369
                                       },
                                       "children": [
                                         {
@@ -2342,14 +2719,14 @@
                                           "layerIdentifier": "layer0",
                                           "transform": {
                                             "rx": -0.7222097516059875,
-                                            "ry": 0.05053776130080223,
+                                            "ry": 0.050537750124931335,
                                             "rz": -0.045829497277736664,
                                             "sx": 1,
-                                            "sy": 0.9999999403953552,
-                                            "sz": 1,
-                                            "x": 4.560870204391553E-19,
-                                            "y": 0.004982912912964821,
-                                            "z": -2.98023217215615E-10
+                                            "sy": 0.9999997615814209,
+                                            "sz": 0.9999999403953552,
+                                            "x": 6.665899420171904E-16,
+                                            "y": 0.004982911050319672,
+                                            "z": 6.332994129110148E-10
                                           }
                                         }
                                       ]
@@ -2366,15 +2743,15 @@
                                       },
                                       "layerIdentifier": "layer0",
                                       "transform": {
-                                        "rx": 0,
+                                        "rx": 1.1368686482667034E-14,
                                         "ry": 5.642599489874556E-7,
                                         "rz": -3.141592502593994,
-                                        "sx": 1,
-                                        "sy": 1,
-                                        "sz": 1,
-                                        "x": 0.002142152050510049,
-                                        "y": -0.00013403117191046476,
-                                        "z": 0.0039042201824486256
+                                        "sx": 1.0000001192092896,
+                                        "sy": 1.0000001192092896,
+                                        "sz": 1.0000001192092896,
+                                        "x": 0.0021421522833406925,
+                                        "y": -0.00013403072080109268,
+                                        "z": 0.003904220648109913
                                       }
                                     },
                                     {
@@ -2389,15 +2766,15 @@
                                       },
                                       "layerIdentifier": "layer0",
                                       "transform": {
-                                        "rx": 0,
+                                        "rx": 1.136868478860114E-14,
                                         "ry": 8.742277657347586E-8,
                                         "rz": -3.141592502593994,
-                                        "sx": 1,
-                                        "sy": 1,
-                                        "sz": 1,
-                                        "x": 0.0015219146152958274,
-                                        "y": -0.001245595165528357,
-                                        "z": -0.006763020996004343
+                                        "sx": 1.0000001192092896,
+                                        "sy": 1.0000001192092896,
+                                        "sz": 1.0000001192092896,
+                                        "x": 0.001521914848126471,
+                                        "y": -0.0012455948162823915,
+                                        "z": -0.006763021927326918
                                       }
                                     },
                                     {
@@ -2412,15 +2789,15 @@
                                       },
                                       "layerIdentifier": "layer0",
                                       "transform": {
-                                        "rx": 0,
+                                        "rx": 1.1368679706403456E-14,
                                         "ry": -5.642599489874556E-7,
                                         "rz": -3.141592502593994,
-                                        "sx": 1,
-                                        "sy": 1,
-                                        "sz": 1,
-                                        "x": -0.002142152050510049,
-                                        "y": -0.00013403117191046476,
-                                        "z": 0.0039042201824486256
+                                        "sx": 1.0000001192092896,
+                                        "sy": 1.0000001192092896,
+                                        "sz": 1.0000001192092896,
+                                        "x": -0.0021421522833406925,
+                                        "y": -0.00013403072080109268,
+                                        "z": 0.003904220648109913
                                       }
                                     },
                                     {
@@ -2435,15 +2812,15 @@
                                       },
                                       "layerIdentifier": "layer0",
                                       "transform": {
-                                        "rx": 0,
+                                        "rx": 1.1368683941568192E-14,
                                         "ry": -8.742277657347586E-8,
                                         "rz": -3.141592502593994,
-                                        "sx": 1,
-                                        "sy": 1,
-                                        "sz": 1,
-                                        "x": -0.0015219146152958274,
-                                        "y": -0.001245595165528357,
-                                        "z": -0.006763020996004343
+                                        "sx": 1.0000001192092896,
+                                        "sy": 1.0000001192092896,
+                                        "sz": 1.0000001192092896,
+                                        "x": -0.001521914848126471,
+                                        "y": -0.0012455948162823915,
+                                        "z": -0.006763021927326918
                                       }
                                     }
                                   ]
@@ -2466,9 +2843,9 @@
                       "skeletonIdentifier": "skeleton152866-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                       "transform": {
                         "rx": -1.5707964897155762,
-                        "ry": 0,
+                        "ry": -0,
                         "rz": 0,
-                        "sx": 39.999996185302734,
+                        "sx": 39.99999237060547,
                         "sy": 39.999996185302734,
                         "sz": 39.999996185302734,
                         "x": 0,
@@ -2505,6 +2882,99 @@
                           "modelName": "blend_shapes_model",
                           "identifier": "blend_shapes_model152895-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                           "sourceIdentifier": "blend_shapes_model:91967-0bcd947f-53a6-4825-b75b-8f688eb174d7"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelName": "sceneObject",
+              "name": "fruit Holder",
+              "identifier": "sceneObject:125849-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "layerIdentifier": "layer0",
+              "children": [
+                {
+                  "modelName": "3_d_object_instance_model",
+                  "name": "FruitsnStuff",
+                  "identifier": "master3_d_object_model:126285-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                  "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                  "depth": 2.0534989833831787,
+                  "height": 3.3708600997924805,
+                  "layerIdentifier": "layer0",
+                  "width": 10.973186492919922,
+                  "children": [
+                    {
+                      "modelName": "mesh",
+                      "name": "Tomato_Cube.009",
+                      "identifier": "mesh:126405-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "sourceIdentifier": "mesh:125773-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "layerIdentifier": "layer0",
+                      "nodeName": "Tomato_Cube.009",
+                      "numberOfFaces": 1088,
+                      "prefabIdentifier": "gltf:125779-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "transform": {
+                        "rx": 0,
+                        "ry": -0,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 0.7727810144424438,
+                        "y": 0.6717495322227478,
+                        "z": -0.6760765314102173
+                      },
+                      "children": [
+                        {
+                          "modelName": "surfaces",
+                          "identifier": "surfaces:126408-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "sourceIdentifier": "surfaces:125775-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "children": [
+                            {
+                              "modelName": "surface",
+                              "name": "surface0",
+                              "identifier": "surface:126411-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                              "sourceIdentifier": "surface:125782-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                              "materialIdentifier": "dependent_material_model:125731-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                              "surfaceGroupIdentifier": "125783-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                            }
+                          ]
+                        },
+                        {
+                          "modelName": "blend_shapes_model",
+                          "identifier": "blend_shapes_model:126414-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "sourceIdentifier": "blend_shapes_model:125777-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                          "children": [
+                            {
+                              "modelName": "blendShape",
+                              "name": "Kakkarot_Cube.002",
+                              "identifier": "blendShape:137551-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                              "nodeName": "Kakkarot_Cube.002",
+                              "prefabIdentifier": "gltf:125743-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                            },
+                            {
+                              "modelName": "blendShape",
+                              "name": "Orange_Cube.004",
+                              "identifier": "blendShape:137553-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                              "nodeName": "Orange_Cube.004",
+                              "prefabIdentifier": "gltf:125755-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                            },
+                            {
+                              "modelName": "blendShape",
+                              "name": "Lemon_Cube.006",
+                              "identifier": "blendShape:137555-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                              "nodeName": "Lemon_Cube.006",
+                              "prefabIdentifier": "gltf:125767-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                            },
+                            {
+                              "modelName": "blendShape",
+                              "name": "Tomato_Cube.009",
+                              "identifier": "blendShape:137557-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                              "nodeName": "Tomato_Cube.009",
+                              "prefabIdentifier": "gltf:125779-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                            }
+                          ]
                         }
                       ]
                     }
@@ -3136,6 +3606,126 @@
             "path": "materials/rollBt.material"
           },
           "isDiffuseTextureIdentifierEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "walkBt0",
+          "identifier": "defaultMaterial:116410-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "diffuseTextureName": "texture:101751-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "doubleSided": true,
+          "fileLocator": {
+            "path": "materials/walkBt0.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "jumpBt0",
+          "identifier": "defaultMaterial:116414-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "diffuseTextureName": "texture:101755-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "doubleSided": true,
+          "fileLocator": {
+            "path": "materials/jumpBt0.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "rollBt0",
+          "identifier": "defaultMaterial:116418-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "diffuseTextureName": "texture:101747-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "doubleSided": true,
+          "fileLocator": {
+            "path": "materials/rollBt0.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "apple",
+          "identifier": "defaultMaterial:123642-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "diffuseTextureName": "texture:125703-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "doubleSided": true,
+          "fileLocator": {
+            "path": "materials/apple.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "carrot",
+          "identifier": "defaultMaterial:123646-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "diffuseTextureName": "texture:125699-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "doubleSided": true,
+          "fileLocator": {
+            "path": "materials/carrot.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "lemon",
+          "identifier": "defaultMaterial:123650-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "diffuseTextureName": "texture:125707-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "doubleSided": true,
+          "fileLocator": {
+            "path": "materials/lemon.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true
+        },
+        {
+          "modelName": "dependent_material_model",
+          "name": "Texture4",
+          "identifier": "dependent_material_model:125727-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "sourceIdentifier": "asset_collection_model:125789-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "blendMode": "replace",
+          "diffuseFactor": "0xff999999",
+          "fileLocator": {
+            "path": "ezadsGraphics/fruits-n-stuff/source/Texture4.material"
+          },
+          "lightingEnabled": true,
+          "shininessFactor": 0
+        },
+        {
+          "modelName": "dependent_material_model",
+          "name": "Texture3",
+          "identifier": "dependent_material_model:125729-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "sourceIdentifier": "asset_collection_model:125789-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "blendMode": "replace",
+          "diffuseFactor": "0xff999999",
+          "fileLocator": {
+            "path": "ezadsGraphics/fruits-n-stuff/source/Texture3.material"
+          },
+          "lightingEnabled": true,
+          "shininessFactor": 0
+        },
+        {
+          "modelName": "dependent_material_model",
+          "name": "Texture",
+          "identifier": "dependent_material_model:125731-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "sourceIdentifier": "asset_collection_model:125789-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "blendMode": "replace",
+          "diffuseFactor": "0xff999999",
+          "diffuseTextureName": "texture:125835-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "fileLocator": {
+            "path": "ezadsGraphics/fruits-n-stuff/source/Texture.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true,
+          "lightingEnabled": true,
+          "shininessFactor": 0
+        },
+        {
+          "modelName": "dependent_material_model",
+          "name": "Texture2",
+          "identifier": "dependent_material_model:125733-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "sourceIdentifier": "asset_collection_model:125789-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "blendMode": "replace",
+          "diffuseFactor": "0xff999999",
+          "fileLocator": {
+            "path": "ezadsGraphics/fruits-n-stuff/source/Texture2.material"
+          },
+          "lightingEnabled": true,
+          "shininessFactor": 0
         }
       ]
     },
@@ -3157,6 +3747,38 @@
           "identifier": "gltf:92413-0bcd947f-53a6-4825-b75b-8f688eb174d7",
           "sourceIdentifier": "master3_d_object_model:92419-0bcd947f-53a6-4825-b75b-8f688eb174d7",
           "assetLocator": "92414-0bcd947f-53a6-4825-b75b-8f688eb174d7.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "Kakkarot_Cube.002",
+          "identifier": "gltf:125743-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetLocator": "125744-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "Orange_Cube.004",
+          "identifier": "gltf:125755-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetLocator": "125756-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "Lemon_Cube.006",
+          "identifier": "gltf:125767-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetLocator": "125768-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "Tomato_Cube.009",
+          "identifier": "gltf:125779-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetLocator": "125780-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a.glb",
           "isExternalAsset": false
         }
       ]
@@ -4092,6 +4714,129 @@
                 {
                   "modelName": "blend_shapes_model",
                   "identifier": "blend_shapes_model:92411-0bcd947f-53a6-4825-b75b-8f688eb174d7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "modelName": "master3_d_object_model",
+          "name": "FruitsnStuff",
+          "identifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "sourceIdentifier": "asset_collection_model:125789-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "depth": 2.0534989833831787,
+          "fileLocator": {
+            "path": "ezadsGraphics/fruits-n-stuff/source/FruitsnStuff.object"
+          },
+          "globalScaleFactor": 0.18226246325900253,
+          "height": 3.3708600997924805,
+          "width": 10.973186492919922,
+          "children": [
+            {
+              "modelName": "mesh",
+              "name": "Kakkarot_Cube.002",
+              "identifier": "mesh:125737-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "nodeName": "Kakkarot_Cube.002",
+              "numberOfFaces": 1440,
+              "prefabIdentifier": "gltf:125743-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "children": [
+                {
+                  "modelName": "surfaces",
+                  "identifier": "surfaces:125739-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                  "children": [
+                    {
+                      "modelName": "surface",
+                      "name": "surface0",
+                      "identifier": "surface:125746-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "materialIdentifier": "dependent_material_model:125727-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "surfaceGroupIdentifier": "125747-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                    }
+                  ]
+                },
+                {
+                  "modelName": "blend_shapes_model",
+                  "identifier": "blend_shapes_model:125741-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                }
+              ]
+            },
+            {
+              "modelName": "mesh",
+              "name": "Orange_Cube.004",
+              "identifier": "mesh:125749-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "nodeName": "Orange_Cube.004",
+              "numberOfFaces": 1088,
+              "prefabIdentifier": "gltf:125755-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "children": [
+                {
+                  "modelName": "surfaces",
+                  "identifier": "surfaces:125751-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                  "children": [
+                    {
+                      "modelName": "surface",
+                      "name": "surface0",
+                      "identifier": "surface:125758-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "materialIdentifier": "dependent_material_model:125729-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "surfaceGroupIdentifier": "125759-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                    }
+                  ]
+                },
+                {
+                  "modelName": "blend_shapes_model",
+                  "identifier": "blend_shapes_model:125753-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                }
+              ]
+            },
+            {
+              "modelName": "mesh",
+              "name": "Lemon_Cube.006",
+              "identifier": "mesh:125761-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "nodeName": "Lemon_Cube.006",
+              "numberOfFaces": 640,
+              "prefabIdentifier": "gltf:125767-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "children": [
+                {
+                  "modelName": "surfaces",
+                  "identifier": "surfaces:125763-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                  "children": [
+                    {
+                      "modelName": "surface",
+                      "name": "surface0",
+                      "identifier": "surface:125770-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "materialIdentifier": "dependent_material_model:125731-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "surfaceGroupIdentifier": "125771-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                    }
+                  ]
+                },
+                {
+                  "modelName": "blend_shapes_model",
+                  "identifier": "blend_shapes_model:125765-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                }
+              ]
+            },
+            {
+              "modelName": "mesh",
+              "name": "Tomato_Cube.009",
+              "identifier": "mesh:125773-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "nodeName": "Tomato_Cube.009",
+              "numberOfFaces": 1088,
+              "prefabIdentifier": "gltf:125779-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "children": [
+                {
+                  "modelName": "surfaces",
+                  "identifier": "surfaces:125775-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                  "children": [
+                    {
+                      "modelName": "surface",
+                      "name": "surface0",
+                      "identifier": "surface:125782-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "materialIdentifier": "dependent_material_model:125733-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+                      "surfaceGroupIdentifier": "125783-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+                    }
+                  ]
+                },
+                {
+                  "modelName": "blend_shapes_model",
+                  "identifier": "blend_shapes_model:125777-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
                 }
               ]
             }
@@ -8486,6 +9231,32 @@
                 ],
                 "Texture": [
                   "Muskrat_Animations.fbm\\T_Muskrat.png"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "FruitsnStuff",
+          "identifier": "asset_collection_model:125789-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "assetDataHash": "96a330b6eac1f7360ee3f358c61f6c9d",
+          "assetLocator": "ezadsGraphics/fruits-n-stuff/source/FruitsnStuff.obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "96a330b6eac1f7360ee3f358c61f6c9d",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:125787-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "namesForFeatureType": {
+                "Material": [
+                  "Texture4",
+                  "Texture3",
+                  "Texture",
+                  "Texture2"
                 ]
               }
             }
