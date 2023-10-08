@@ -47,20 +47,20 @@ def display_pet_design_page():
 
 def display_input_method_page():
     st.title("Choose Your Input Method")
-    
-    icons = {
-        "Voice Input": "./icons/microphone_icon.png",
-        "Text Input": "./icons/keyboard_icon.png",
-        "Sign Language Input": "./icons/hand_icon.png"
-    }
-    
-    for method, icon_path in icons.items():
+    for method, icon_path in ICONS.items():
         icon_data = image_to_data_uri(icon_path)
+        if st.button(method):
+            st.session_state['input_method'] = method.lower().replace(" ", "_")
         st.markdown(f"""
-        <button class="icon-button">
-            <img src="data:image/png;base64,{icon_data}" alt="{method}">
-            {method}
-        </button>
+        <style>
+            .btn-md {{ visibility: hidden; }}
+        </style>
+        <div>
+            <a class="icon-button">
+                <img src="data:image/png;base64,{icon_data}" alt="{method}">
+                {method}
+            </a>
+        </div>
         """, unsafe_allow_html=True)
 
 def display_pet_choice_page():
@@ -151,62 +151,42 @@ def get_text_from_audio(audio_bytes):
         os.remove(wav_filename)    
     return None
 
-# Main App Logic
-st.write("")  # Add an empty line for spacing
-col1, col2, col3 = st.columns([1, 6, 1])   # Create columns to center the content
+def handle_voice_input():
+    audio_bytes = audio_recorder()
+    if audio_bytes:
+        user_input = get_text_from_audio(audio_bytes)
+        if user_input:
+            generate_image_from_text(user_input)
 
-with col2:  # Use the center column to display the content
-    if not st.session_state.get('logged_in', False):
-        display_login_page()
-    elif not st.session_state.get('pet_design'):
-        display_pet_design_page()
-    else:
-        if st.session_state['pet_design'] == "Design My Own Pet":
-            st.title("Choose Your Input Method")
-        
-            # Invisible Streamlit buttons to set session state values
-            if st.button("Voice Input", key="voice"):
-                st.session_state['input_method'] = 'voice'
-            if st.button("Text Input", key="text"):
-                st.session_state['input_method'] = 'text'
-            if st.button("Sign Language Input", key="sign"):
-                st.session_state['input_method'] = 'sign'
+def handle_text_input():
+    user_input = st.text_input("Type Here:")
+    if user_input:
+        generate_image_from_text(user_input)
 
-            # Custom-styled buttons overlaying the Streamlit buttons
-            st.markdown(f"""
-            <style>
-                .btn-md {{ visibility: hidden; }}
-            </style>
-            <div>
-                <a class="icon-button">
-                    <img src="data:image/png;base64,{mic_icon}" alt="Microphone Icon">
-                    Voice Input
-                </a>
-                <a class="icon-button">
-                    <img src="data:image/png;base64,{keyboard_icon}" alt="Keyboard Icon">
-                    Text Input
-                </a>
-                <a class="icon-button">
-                    <img src="data:image/png;base64,{hand_icon}" alt="Hand Icon">
-                    Sign Language Input
-                </a>
-            </div>
-            """, unsafe_allow_html=True)
-            
-            # Check which button was pressed using session state
-            if st.session_state.get('input_method') == 'voice':
-                audio_bytes = audio_recorder()
-                if audio_bytes:
-                    user_input = get_text_from_audio(audio_bytes)
-                    if user_input:
-                        # Use the text to generate an image using OpenAI
-                        generate_image_from_text(user_input)
-            elif st.session_state.get('input_method') == 'text':
-                user_input = st.text_input("Type Here:")
-                if user_input:
-                    # Use the user_input to generate an image using OpenAI
-                    generate_image_from_text(user_input)
-            elif st.session_state.get('input_method') == 'sign':
-                st.camera_input("Capture Makaton Sign Language")
+def handle_sign_language_input():
+    st.camera_input("Capture Makaton Sign Language")
+
+
+def main():
+    # Custom-styled buttons overlaying the Streamlit buttons
+    st.write("")  # Add an empty line for spacing
+    col1, col2, col3 = st.columns([1, 6, 1])   # Create columns to center the content
+    with col2:  # Use the center column to display the content
+        if not st.session_state.get('logged_in', False):
+            display_login_page()
+        elif not st.session_state.get('pet_design'):
+            display_pet_design_page()
         else:
-            display_pet_choice_page()
+            if st.session_state['pet_design'] == "Design My Own Pet":
+                display_input_method_page()
+                if st.session_state.get('input_method') == 'voice_input':
+                    handle_voice_input()
+                elif st.session_state.get('input_method') == 'text_input':
+                    handle_text_input()
+                elif st.session_state.get('input_method') == 'sign_language_input':
+                    handle_sign_language_input()
+            else:
+                display_pet_choice_page()
+
+if __name__ == "__main__":
+    main()
