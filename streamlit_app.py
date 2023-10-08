@@ -25,51 +25,35 @@ mic_icon = image_to_data_uri("./icons/microphone_icon.png")
 keyboard_icon = image_to_data_uri("./icons/keyboard_icon.png")
 hand_icon = image_to_data_uri("./icons/hand_icon.png")
 
-
-def display_login_page():
-    st.title("Welcome to AR Pet Game!")
-    st.subheader("Please login or signup to continue.")
-    
-    # Using session state to detect button clicks
-    login_methods = ["Login with Google", "Login with Facebook", "Signup"]
-    for method in login_methods:
-        if st.button(method):
-            st.session_state['logged_in'] = True
-
-def display_pet_design_page():
-    st.title("Design Your Pet!")
-    st.subheader("Choose how you'd like to design your pet.")
-    
-    pet_designs = ["Design My Own Pet", "Use Pre-designed Pet"]
-    for design in pet_designs:
-        if st.button(design):
-            st.session_state['pet_design'] = design
-
 def display_input_method_page():
-    st.title("Choose Your Input Method")
+    left_co,cent_co,last_co = st.columns(3)
+    with cent_co:
+        st.image("./icons/petlogo.jpg", width=200)
+    st.markdown(f'<h1 style="text-align:center;color:#f46a4c;font-size:42px;">{"Choose Your Input Method"}</h1><br>', unsafe_allow_html=True)
+    
+    
     for method, icon_path in ICONS.items():
         icon_data = image_to_data_uri(icon_path)
-        if st.button(method):
-            st.session_state['input_method'] = method.lower().replace(" ", "_")
-        st.markdown(f"""
-        <style>
-            .btn-md {{ visibility: hidden; }}
-        </style>
-        <div>
-            <a class="icon-button">
-                <img src="data:image/png;base64,{icon_data}" alt="{method}">
-                {method}
-            </a>
-        </div>
-        """, unsafe_allow_html=True)
+        
+        col1, col2 = st.columns([1, 3])
+        if col2.button(method, key=method):
+            st.session_state['input_method'] = method.lower().replace(' ', '_')
+        col1.image(icon_path, width=50) 
+        # Custom CSS for Streamlit buttons can be added via st.markdown, similarly to previous examples
 
-def display_pet_choice_page():
-    st.title("Choose Your Pet")
-    
-    pets = ["Pet 1", "Pet 2", "Pet 3"]
-    for pet in pets:
-        if st.button(pet):
-            st.write(f"You chose {pet}!")
+
+def handle_input_method(input_method):
+    if input_method == 'voice_input':
+        # Handle voice input
+        handle_voice_input()
+    elif input_method == 'text_input':
+        # Handle text input
+        handle_text_input()
+    elif input_method == 'sign_language_input':
+        # Handle sign language input
+        handle_sign_language_input()
+    else:
+        st.error("Invalid input method selected.")
 
 # Set child-friendly styles
 st.markdown(
@@ -103,28 +87,40 @@ st.markdown(
         .icon-button:hover {
             background-color: #E69966; /* Chartreuse color on hover */
         }
+        .stButton>button {
+            font-size: 1.5em;
+            padding: 0.5em 2em;
+            margin: 1em;
+            align:center;
+            ...
+        }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
+def get_image_download_link(img_bytes, filename, text):
+    b64 = base64.b64encode(img_bytes).decode()
+    return f'<a href="data:image/png;base64,{b64}" download="{filename}">{text}</a>'
+
 # Function to generate image from text using OpenAI
 def generate_image_from_text(user_input):
-    try:
-        openai.api_key = "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"
-        res = openai.Image.create(
-            prompt=user_input,
-            n=1,
-            size="1024x1024",
-            response_format="b64_json"
-        )
-        generated_image_data = res['data'][0]['b64_json']
-        image_bytes = base64.b64decode(generated_image_data)
-        st.image(image_bytes, caption="Generated Image", use_column_width=True)
-    except Exception as e:
-        # Print the exception details for debugging
-        print(f"Error: {e}")
-        st.error("Oops! Something went wrong while generating the image. Please try again later.")
+    if 'generated_image' not in st.session_state:
+        try:
+            with st.spinner('Generating image...'):
+                openai.api_key = "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"
+                res = openai.Image.create(
+                    prompt=user_input,
+                    n=1,
+                    size="1024x1024",
+                    response_format="b64_json"
+                )
+                generated_image_data = res['data'][0]['b64_json']
+                st.session_state['generated_image'] = base64.b64decode(generated_image_data)
+        except Exception as e:
+            st.error("Oops! Something went wrong while generating the image. Please try again later.")
+    # Display the image
+    st.image(st.session_state['generated_image'], width=50, caption="Generated Image", use_column_width=True)
 
 def convert_to_wav(audio_bytes):
     audio = AudioSegment.from_file(io.BytesIO(audio_bytes))
@@ -151,42 +147,58 @@ def get_text_from_audio(audio_bytes):
         os.remove(wav_filename)    
     return None
 
+def generate_story(user_input):
+    with st.spinner('Generating story...'):
+        response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a story teller for children aged 3 to 7 years. \
+        Use words that are easy to understand by your audience.\
+        Your stories should spark the audience's imagination and curiosity \
+        Avoid sad stories or mentioning death. Try integrating the body senses like touch, hearing or smell into the stories. \
+        Use Scottish English and names."},
+            {"role": "user", "content": f"Given the prompt {user_input} write me a short and funny story, no longer than 1000 characters long"}
+        ]
+        )
+        output = response['choices'][0]['message']['content']
+    st.write(output)
+    
+
 def handle_voice_input():
     audio_bytes = audio_recorder()
     if audio_bytes:
         user_input = get_text_from_audio(audio_bytes)
         if user_input:
             generate_image_from_text(user_input)
+            if st.button("Generate Story"):
+                generate_story(user_input)
 
 def handle_text_input():
-    user_input = st.text_input("Type Here:")
+    left_co,cent_co,last_co = st.columns(3)
+    with cent_co:
+        st.image("./icons/petlogo.jpg", width=200)
+    st.markdown(f'<h1 style="color:#f46a4c;font-size:36px;">{"Type here:"}</h1>', unsafe_allow_html=True)
+    user_input = st.text_input("")
+
     if user_input:
+        st.session_state['user_input'] = user_input
         generate_image_from_text(user_input)
+        if st.button("Generate Story"):
+            generate_story(user_input)
+        st.button("Play with Pet!")
+    
 
 def handle_sign_language_input():
     st.camera_input("Capture Makaton Sign Language")
 
 
 def main():
-    # Custom-styled buttons overlaying the Streamlit buttons
-    st.write("")  # Add an empty line for spacing
-    col1, col2, col3 = st.columns([1, 6, 1])   # Create columns to center the content
-    with col2:  # Use the center column to display the content
-        if not st.session_state.get('logged_in', False):
-            display_login_page()
-        elif not st.session_state.get('pet_design'):
-            display_pet_design_page()
-        else:
-            if st.session_state['pet_design'] == "Design My Own Pet":
-                display_input_method_page()
-                if st.session_state.get('input_method') == 'voice_input':
-                    handle_voice_input()
-                elif st.session_state.get('input_method') == 'text_input':
-                    handle_text_input()
-                elif st.session_state.get('input_method') == 'sign_language_input':
-                    handle_sign_language_input()
-            else:
-                display_pet_choice_page()
+   if 'input_method' not in st.session_state:
+       display_input_method_page()
+   else:
+       handle_input_method(st.session_state['input_method'])
+       
+
 
 if __name__ == "__main__":
     main()
