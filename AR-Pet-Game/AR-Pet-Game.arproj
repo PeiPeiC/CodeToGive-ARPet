@@ -1404,13 +1404,16 @@
       "identifier": "playback_controllers_model:148317-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
       "children": [
         {
-          "sectionFileLocation": "animations/geckoJump.animationctrl"
-        },
-        {
           "sectionFileLocation": "animations/geckoWalk.animationctrl"
         },
         {
+          "sectionFileLocation": "animations/geckoJump.animationctrl"
+        },
+        {
           "sectionFileLocation": "animations/geckoRoll.animationctrl"
+        },
+        {
+          "sectionFileLocation": "animations/geckoIdle.animationctrl"
         },
         {
           "sectionFileLocation": "animations/muskratWalk.animationctrl"
@@ -1422,10 +1425,10 @@
           "sectionFileLocation": "animations/muskratRoll-2.animationctrl"
         },
         {
-          "sectionFileLocation": "animations/geckoIdle.animationctrl"
+          "sectionFileLocation": "animations/muskratIdle.animationctrl"
         },
         {
-          "sectionFileLocation": "animations/muskratIdle.animationctrl"
+          "sectionFileLocation": "animations/muskratEat-2.animationctrl"
         }
       ]
     }
