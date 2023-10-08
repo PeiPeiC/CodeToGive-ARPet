@@ -546,7 +546,7 @@
                 },
                 {
                   "modelName": "composition_model",
-                  "name": "GeckoButtons",
+                  "name": "PetActionButtons",
                   "identifier": "composition_model:161521-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                   "animationMask": {
                     "position": false,
@@ -592,7 +592,7 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006103515625
+                        "value": 100.00006
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
@@ -705,7 +705,7 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006103515625
+                        "value": 100.00006
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
@@ -818,7 +818,7 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006103515625
+                        "value": 100.00006
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
@@ -918,8 +918,8 @@
                 },
                 {
                   "modelName": "composition_model",
-                  "name": "MuskratButton",
-                  "identifier": "composition_model:132204-8797610e-c4fd-416e-a790-317261c3c0f9",
+                  "name": "PetSelectButtons",
+                  "identifier": "composition_model:122813-7160d775-3dc0-4cca-8509-b4afd20d4727",
                   "animationMask": {
                     "position": false,
                     "rotation": false,
@@ -949,8 +949,8 @@
                   "children": [
                     {
                       "modelName": "rectangle_model",
-                      "name": "walkButton",
-                      "identifier": "rectangle_model:132207-8797610e-c4fd-416e-a790-317261c3c0f9",
+                      "name": "GeckoButton",
+                      "identifier": "rectangle_model:122817-7160d775-3dc0-4cca-8509-b4afd20d4727",
                       "animationMask": {
                         "position": false,
                         "rotation": false,
@@ -964,14 +964,14 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006
+                        "value": 100
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
                       "isMaterialIdentifierEnabled": true,
                       "layerIdentifier": "buttonLayer",
                       "locksAspectRatio": false,
-                      "materialIdentifier": "defaultMaterial:151806-8797610e-c4fd-416e-a790-317261c3c0f9",
+                      "materialIdentifier": "defaultMaterial:109284-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
                       "outputVisibility": "preview|capture",
                       "physicsEnabled": false,
                       "pinnedBottom": false,
@@ -985,11 +985,11 @@
                       "pinnedHorizontalCenterValue": {
                         "unit": {
                           "multiplier": 1,
-                          "unitBase": 20
+                          "unitBase": 10
                         },
-                        "value": -37.179483266977165
+                        "value": 0
                       },
-                      "pinnedLeft": false,
+                      "pinnedLeft": true,
                       "pinnedLeftValue": {
                         "unit": {
                           "multiplier": 1,
@@ -1005,7 +1005,7 @@
                         },
                         "value": 0
                       },
-                      "pinnedTop": false,
+                      "pinnedTop": true,
                       "pinnedTopValue": {
                         "unit": {
                           "multiplier": 1,
@@ -1016,9 +1016,9 @@
                       "pinnedVerticalCenterValue": {
                         "unit": {
                           "multiplier": 1,
-                          "unitBase": 20
+                          "unitBase": 10
                         },
-                        "value": 37.20379502369669
+                        "value": 0
                       },
                       "positionX": {
                         "unit": {
@@ -1045,9 +1045,9 @@
                         "sx": 1,
                         "sy": 1,
                         "sz": 1,
-                        "x": 0.0000152587890625,
-                        "y": 686,
-                        "z": 0.00006103515625
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
                       },
                       "usesFlexibleHeight": false,
                       "usesFlexibleWidth": false,
@@ -1062,8 +1062,8 @@
                     },
                     {
                       "modelName": "rectangle_model",
-                      "name": "jumpButton",
-                      "identifier": "rectangle_model:132210-8797610e-c4fd-416e-a790-317261c3c0f9",
+                      "name": "MuskratButton",
+                      "identifier": "rectangle_model:122821-7160d775-3dc0-4cca-8509-b4afd20d4727",
                       "animationMask": {
                         "position": false,
                         "rotation": false,
@@ -1077,14 +1077,14 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006
+                        "value": 100
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
                       "isMaterialIdentifierEnabled": true,
                       "layerIdentifier": "buttonLayer",
                       "locksAspectRatio": false,
-                      "materialIdentifier": "defaultMaterial:151808-8797610e-c4fd-416e-a790-317261c3c0f9",
+                      "materialIdentifier": "defaultMaterial:151806-8797610e-c4fd-416e-a790-317261c3c0f9",
                       "outputVisibility": "preview|capture",
                       "physicsEnabled": false,
                       "pinnedBottom": false,
@@ -1098,17 +1098,17 @@
                       "pinnedHorizontalCenterValue": {
                         "unit": {
                           "multiplier": 1,
-                          "unitBase": 20
+                          "unitBase": 10
                         },
                         "value": 0
                       },
-                      "pinnedLeft": false,
+                      "pinnedLeft": true,
                       "pinnedLeftValue": {
                         "unit": {
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 0
+                        "value": 145
                       },
                       "pinnedRight": false,
                       "pinnedRightValue": {
@@ -1118,7 +1118,7 @@
                         },
                         "value": 0
                       },
-                      "pinnedTop": false,
+                      "pinnedTop": true,
                       "pinnedTopValue": {
                         "unit": {
                           "multiplier": 1,
@@ -1129,9 +1129,9 @@
                       "pinnedVerticalCenterValue": {
                         "unit": {
                           "multiplier": 1,
-                          "unitBase": 20
+                          "unitBase": 10
                         },
-                        "value": 37.20379502369669
+                        "value": 0
                       },
                       "positionX": {
                         "unit": {
@@ -1159,120 +1159,7 @@
                         "sy": 1,
                         "sz": 1,
                         "x": 145,
-                        "y": 686,
-                        "z": 0
-                      },
-                      "usesFlexibleHeight": false,
-                      "usesFlexibleWidth": false,
-                      "verticalAlignment": "center",
-                      "width": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 10
-                        },
-                        "value": 100
-                      }
-                    },
-                    {
-                      "modelName": "rectangle_model",
-                      "name": "eatButton",
-                      "identifier": "rectangle_model:132213-8797610e-c4fd-416e-a790-317261c3c0f9",
-                      "animationMask": {
-                        "position": false,
-                        "rotation": false,
-                        "scale": false
-                      },
-                      "aspectRatioValue": 1,
-                      "cameraVisibility": "back|front",
-                      "fillMode": "none",
-                      "height": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 10
-                        },
-                        "value": 100.00006
-                      },
-                      "hidden": false,
-                      "horizontalAlignment": "center",
-                      "isMaterialIdentifierEnabled": true,
-                      "layerIdentifier": "buttonLayer",
-                      "locksAspectRatio": false,
-                      "materialIdentifier": "defaultMaterial:151810-8797610e-c4fd-416e-a790-317261c3c0f9",
-                      "outputVisibility": "preview|capture",
-                      "physicsEnabled": false,
-                      "pinnedBottom": false,
-                      "pinnedBottomValue": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 10
-                        },
-                        "value": 0
-                      },
-                      "pinnedHorizontalCenterValue": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 20
-                        },
-                        "value": 37.17948717948718
-                      },
-                      "pinnedLeft": false,
-                      "pinnedLeftValue": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 10
-                        },
-                        "value": 0
-                      },
-                      "pinnedRight": false,
-                      "pinnedRightValue": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 10
-                        },
-                        "value": 0
-                      },
-                      "pinnedTop": false,
-                      "pinnedTopValue": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 10
-                        },
-                        "value": 0
-                      },
-                      "pinnedVerticalCenterValue": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 20
-                        },
-                        "value": 37.20379502369669
-                      },
-                      "positionX": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 10
-                        },
-                        "value": 0
-                      },
-                      "positionY": {
-                        "unit": {
-                          "multiplier": 1,
-                          "unitBase": 10
-                        },
-                        "value": 0
-                      },
-                      "rotation": 0,
-                      "scaleX": 1,
-                      "scaleY": 1,
-                      "tags": [],
-                      "transform": {
-                        "rx": 0,
-                        "ry": 0,
-                        "rz": 0,
-                        "sx": 1,
-                        "sy": 1,
-                        "sz": 1,
-                        "x": 290,
-                        "y": 686,
+                        "y": 0,
                         "z": 0
                       },
                       "usesFlexibleHeight": false,
@@ -1398,7 +1285,7 @@
               "cameraVisibility": "back|front",
               "depth": 0.9361807107925415,
               "height": 0.4976491332054138,
-              "hidden": false,
+              "hidden": true,
               "layerIdentifier": "layer0",
               "outputVisibility": "preview|capture",
               "physicsEnabled": false,

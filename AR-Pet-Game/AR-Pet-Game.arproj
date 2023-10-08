@@ -1257,7 +1257,7 @@
               }
             }
           ],
-          "assetDataHash": "81e12c5ab036bc00bc76e999a09929da",
+          "assetDataHash": "f998fe4b404b8fddd9f52bcb11f4fdfc",
           "assetLocator": "objects/carrot/carrot.gltf",
           "authoringTool": "Khronos glTF Blender I/O v1.7.33",
           "excludeDuringExport": true,
@@ -1291,7 +1291,7 @@
               }
             }
           ],
-          "assetDataHash": "49163bafb9602468d65050c4d91e9b1c",
+          "assetDataHash": "fb46b2eb5f0dd0dd3c7425a992df3a2a",
           "assetLocator": "objects/lemon/lemon.gltf",
           "authoringTool": "Khronos glTF Blender I/O v1.7.33",
           "excludeDuringExport": true,
@@ -1325,7 +1325,7 @@
               }
             }
           ],
-          "assetDataHash": "16fadba44482a3a4410c452c31a90c51",
+          "assetDataHash": "eb5837c668d4c3d4c9c8d6951425b18d",
           "assetLocator": "objects/orange/orange.gltf",
           "authoringTool": "Khronos glTF Blender I/O v1.7.33",
           "excludeDuringExport": true,
@@ -1359,7 +1359,7 @@
               }
             }
           ],
-          "assetDataHash": "d4a31b7a54f6dac0f61ae7a03ab4433b",
+          "assetDataHash": "0cd0fe501e76e504364244f4b0e78d13",
           "assetLocator": "objects/tomato/tomato.gltf",
           "authoringTool": "Khronos glTF Blender I/O v1.7.33",
           "excludeDuringExport": true,
@@ -1416,13 +1416,7 @@
       "identifier": "playback_controllers_model:148317-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
       "children": [
         {
-          "sectionFileLocation": "animations/geckoDie.animationctrl"
-        },
-        {
           "sectionFileLocation": "animations/geckoJump.animationctrl"
-        },
-        {
-          "sectionFileLocation": "animations/geckoHit.animationctrl"
         },
         {
           "sectionFileLocation": "animations/geckoWalk.animationctrl"
@@ -1438,6 +1432,12 @@
         },
         {
           "sectionFileLocation": "animations/muskratEat.animationctrl"
+        },
+        {
+          "sectionFileLocation": "animations/geckoIdle.animationctrl"
+        },
+        {
+          "sectionFileLocation": "animations/muskratIdle.animationctrl"
         }
       ]
     }

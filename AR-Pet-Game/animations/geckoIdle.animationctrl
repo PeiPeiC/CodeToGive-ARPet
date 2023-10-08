@@ -1,0 +1,12 @@
+{
+  "modelName": "animation_playback_controller_model",
+  "name": "geckoIdle",
+  "identifier": "animation_playback_controller_model:124254-7160d775-3dc0-4cca-8509-b4afd20d4727",
+  "animationIdentifier": "objects/Gecko_Animations/Idle_A.animation",
+  "autoPlay": true,
+  "clipEnd": 0.4166666666666667,
+  "clipProgress": 0,
+  "clipStart": 0,
+  "loop": true,
+  "speed": 1
+}
