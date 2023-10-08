@@ -1,1 +1,12 @@
-{ "dataModelPlaceholderFile": true }
+{
+  "modelName": "animation_playback_controller_model",
+  "name": "geckoWalk",
+  "identifier": "animation_playback_controller_model:96081-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+  "animationIdentifier": "objects/Gecko_Animations/Walk.animation",
+  "autoPlay": true,
+  "clipEnd": 0.4166666666666667,
+  "clipProgress": 0,
+  "clipStart": 0,
+  "loop": true,
+  "speed": 0.48578199052132964
+}

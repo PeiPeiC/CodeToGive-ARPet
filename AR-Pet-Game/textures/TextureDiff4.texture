@@ -1,1 +1,36 @@
-{ "dataModelPlaceholderFile": true }
+{
+  "modelName": "texture",
+  "name": "TextureDiff4",
+  "identifier": "texture:125843-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "f6f004d586dc45a2683fcb5da0afca3e",
+  "assetLocator": "textures/TextureDiff4.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 512,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 512,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "f6f004d586dc45a2683fcb5da0afca3e",
+      "colorCount": 569,
+      "detectedAlphaChannel": "no_alpha",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 3.8423935167855228,
+      "pixelsHigh": 512,
+      "pixelsWide": 512
+    }
+  ]
+}
