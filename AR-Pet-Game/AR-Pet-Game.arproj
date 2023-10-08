@@ -113,6 +113,15 @@
         },
         {
           "sectionFileLocation": "textures/orange-tex.texture"
+        },
+        {
+          "sectionFileLocation": "textures/muskratWalk.texture"
+        },
+        {
+          "sectionFileLocation": "textures/muskratEat.texture"
+        },
+        {
+          "sectionFileLocation": "textures/muskratJump.texture"
         }
       ]
     },
@@ -464,6 +473,57 @@
         {
           "modelName": "textureExportConfig",
           "identifier": "textureExportConfig:103594-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:140439-8797610e-c4fd-416e-a790-317261c3c0f9",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:140441-8797610e-c4fd-416e-a790-317261c3c0f9",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:140443-8797610e-c4fd-416e-a790-317261c3c0f9",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:140445-8797610e-c4fd-416e-a790-317261c3c0f9",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:140447-8797610e-c4fd-416e-a790-317261c3c0f9",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:140449-8797610e-c4fd-416e-a790-317261c3c0f9",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:140451-8797610e-c4fd-416e-a790-317261c3c0f9",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:140453-8797610e-c4fd-416e-a790-317261c3c0f9",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:140455-8797610e-c4fd-416e-a790-317261c3c0f9",
           "method": "fastest"
         }
       ]
@@ -879,6 +939,15 @@
         },
         {
           "sectionFileLocation": "objects/tomato/Texture7.material"
+        },
+        {
+          "sectionFileLocation": "materials/muskratWalk-2.material"
+        },
+        {
+          "sectionFileLocation": "materials/muskratJump-2.material"
+        },
+        {
+          "sectionFileLocation": "materials/muskratEat-2.material"
         }
       ]
     },
@@ -1356,13 +1425,19 @@
           "sectionFileLocation": "animations/geckoHit.animationctrl"
         },
         {
-          "sectionFileLocation": "animations/animationPlaybackController0.animationctrl"
-        },
-        {
           "sectionFileLocation": "animations/geckoWalk.animationctrl"
         },
         {
           "sectionFileLocation": "animations/geckoRoll.animationctrl"
+        },
+        {
+          "sectionFileLocation": "animations/muskratWalk.animationctrl"
+        },
+        {
+          "sectionFileLocation": "animations/muskratJump.animationctrl"
+        },
+        {
+          "sectionFileLocation": "animations/muskratEat.animationctrl"
         }
       ]
     }

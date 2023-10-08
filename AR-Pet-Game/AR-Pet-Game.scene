@@ -555,7 +555,7 @@
                   },
                   "cameraVisibility": "back|front",
                   "height": 844,
-                  "hidden": false,
+                  "hidden": true,
                   "layerIdentifier": "buttonLayer",
                   "outputVisibility": "preview|capture",
                   "physicsEnabled": false,
@@ -592,7 +592,7 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006
+                        "value": 100.00006103515625
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
@@ -705,7 +705,7 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006
+                        "value": 100.00006103515625
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
@@ -818,7 +818,7 @@
                           "multiplier": 1,
                           "unitBase": 10
                         },
-                        "value": 100.00006
+                        "value": 100.00006103515625
                       },
                       "hidden": false,
                       "horizontalAlignment": "center",
@@ -971,7 +971,7 @@
                       "isMaterialIdentifierEnabled": true,
                       "layerIdentifier": "buttonLayer",
                       "locksAspectRatio": false,
-                      "materialIdentifier": "defaultMaterial:109284-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
+                      "materialIdentifier": "defaultMaterial:151806-8797610e-c4fd-416e-a790-317261c3c0f9",
                       "outputVisibility": "preview|capture",
                       "physicsEnabled": false,
                       "pinnedBottom": false,
@@ -1084,7 +1084,7 @@
                       "isMaterialIdentifierEnabled": true,
                       "layerIdentifier": "buttonLayer",
                       "locksAspectRatio": false,
-                      "materialIdentifier": "defaultMaterial:161568-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
+                      "materialIdentifier": "defaultMaterial:151808-8797610e-c4fd-416e-a790-317261c3c0f9",
                       "outputVisibility": "preview|capture",
                       "physicsEnabled": false,
                       "pinnedBottom": false,
@@ -1175,7 +1175,7 @@
                     },
                     {
                       "modelName": "rectangle_model",
-                      "name": "rollButton",
+                      "name": "eatButton",
                       "identifier": "rectangle_model:132213-8797610e-c4fd-416e-a790-317261c3c0f9",
                       "animationMask": {
                         "position": false,
@@ -1197,7 +1197,7 @@
                       "isMaterialIdentifierEnabled": true,
                       "layerIdentifier": "buttonLayer",
                       "locksAspectRatio": false,
-                      "materialIdentifier": "defaultMaterial:163071-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
+                      "materialIdentifier": "defaultMaterial:151810-8797610e-c4fd-416e-a790-317261c3c0f9",
                       "outputVisibility": "preview|capture",
                       "physicsEnabled": false,
                       "pinnedBottom": false,

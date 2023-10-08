@@ -1,0 +1,41 @@
+{
+  "modelName": "texture",
+  "name": "muskratEat",
+  "identifier": "texture:140433-8797610e-c4fd-416e-a790-317261c3c0f9",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "040be2a7e43ef5c951f72d11282204b7",
+  "assetLocator": "textures/muskratEat.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:140443-8797610e-c4fd-416e-a790-317261c3c0f9",
+    "textureExportConfig:140449-8797610e-c4fd-416e-a790-317261c3c0f9",
+    "textureExportConfig:140455-8797610e-c4fd-416e-a790-317261c3c0f9"
+  ],
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 1024,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 1024,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "040be2a7e43ef5c951f72d11282204b7",
+      "colorCount": 4307,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 2.539490508563719,
+      "pixelsHigh": 1024,
+      "pixelsWide": 1024
+    }
+  ]
+}
