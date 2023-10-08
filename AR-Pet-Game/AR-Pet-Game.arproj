@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:91596-60540593-1c65-4e29-97e7-a71374ac4a38",
   "id": "91920605405931c654e2997e7a71374ac4a38",
-  "revision": "1716572d0b996b4c1d4f2688dfd5e74926bef2",
+  "revision": "10692021f2a084195a4404a41b6b18b391c279",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -42,6 +42,7 @@
     {
       "modelName": "textures",
       "identifier": "textures:91602-60540593-1c65-4e29-97e7-a71374ac4a38",
+      "defaultEnvironmentTexture": "environment_texture_model:96390-11389494-90cb-4d38-8635-dcbdce4ba92b",
       "children": [
         {
           "sectionFileLocation": "objects/Gecko_Animations/Texture 0.texture"
@@ -85,16 +86,33 @@
           "sectionFileLocation": "textures/lemon.texture"
         },
         {
-          "sectionFileLocation": "textures/TextureDiff2.texture"
+          "sectionFileLocation": "textures/DiffuseEnvironment.texture"
         },
         {
-          "sectionFileLocation": "textures/TextureDiff3.texture"
+          "sectionFileLocation": "textures/PreviewEnvironment.texture"
         },
         {
-          "sectionFileLocation": "textures/TextureDiff4.texture"
+          "sectionFileLocation": "textures/SpecularEnvironment.texture"
         },
         {
-          "sectionFileLocation": "textures/TextureDiff5.texture"
+          "modelName": "environment_texture_model",
+          "name": "Default environment texture",
+          "identifier": "environment_texture_model:96390-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "diffuseEnvironmentTextureIdentifier": "textures/DiffuseEnvironment.texture",
+          "previewEnvironmentTextureIdentifier": "textures/PreviewEnvironment.texture",
+          "specularEnvironmentTextureIdentifier": "textures/SpecularEnvironment.texture"
+        },
+        {
+          "sectionFileLocation": "textures/carrot-tex.texture"
+        },
+        {
+          "sectionFileLocation": "textures/tomato-tex.texture"
+        },
+        {
+          "sectionFileLocation": "textures/lemon-tex.texture"
+        },
+        {
+          "sectionFileLocation": "textures/orange-tex.texture"
         }
       ]
     },
@@ -269,6 +287,176 @@
         {
           "modelName": "textureExportConfig",
           "identifier": "textureExportConfig:101773-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:106903-21f2a084-195a-4404-a41b-6b18b391c279",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:106905-21f2a084-195a-4404-a41b-6b18b391c279",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:106907-21f2a084-195a-4404-a41b-6b18b391c279",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:106909-21f2a084-195a-4404-a41b-6b18b391c279",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:106911-21f2a084-195a-4404-a41b-6b18b391c279",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:106913-21f2a084-195a-4404-a41b-6b18b391c279",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:106915-21f2a084-195a-4404-a41b-6b18b391c279",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:106917-21f2a084-195a-4404-a41b-6b18b391c279",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:106919-21f2a084-195a-4404-a41b-6b18b391c279",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:96366-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "accuracy": "best"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:96368-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "accuracy": "best",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:96370-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "accuracy": "best",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:96375-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "accuracy": "best"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:96377-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "accuracy": "best",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:96379-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "accuracy": "best",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:96384-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "accuracy": "best"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:96386-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "accuracy": "best",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:96388-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "accuracy": "best",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103572-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103574-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103576-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103578-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103580-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103582-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103584-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103586-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest",
+          "targetFormat": 2
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103588-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103590-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103592-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "method": "fastest"
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:103594-11389494-90cb-4d38-8635-dcbdce4ba92b",
           "method": "fastest"
         }
       ]
@@ -674,16 +862,16 @@
           "sectionFileLocation": "materials/lemon.material"
         },
         {
-          "sectionFileLocation": "ezadsGraphics/fruits-n-stuff/source/Texture4.material"
+          "sectionFileLocation": "objects/carrot/Texture5.material"
         },
         {
-          "sectionFileLocation": "ezadsGraphics/fruits-n-stuff/source/Texture3.material"
+          "sectionFileLocation": "objects/lemon/Texture0.material"
         },
         {
-          "sectionFileLocation": "ezadsGraphics/fruits-n-stuff/source/Texture.material"
+          "sectionFileLocation": "objects/orange/Texture6.material"
         },
         {
-          "sectionFileLocation": "ezadsGraphics/fruits-n-stuff/source/Texture2.material"
+          "sectionFileLocation": "objects/tomato/Texture7.material"
         }
       ]
     },
@@ -709,34 +897,34 @@
         },
         {
           "modelName": "gltf",
-          "name": "Kakkarot_Cube.002",
-          "identifier": "gltf:125743-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-          "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-          "assetLocator": "125744-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a.glb",
+          "name": "Kakkarot_Cube.3",
+          "identifier": "gltf:96351-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "sourceIdentifier": "master3_d_object_model:96357-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "assetLocator": "96352-11389494-90cb-4d38-8635-dcbdce4ba92b.glb",
           "isExternalAsset": false
         },
         {
           "modelName": "gltf",
-          "name": "Orange_Cube.004",
-          "identifier": "gltf:125755-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-          "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-          "assetLocator": "125756-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a.glb",
+          "name": "Lemon_Cube.7",
+          "identifier": "gltf:96402-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "sourceIdentifier": "master3_d_object_model:96408-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "assetLocator": "96403-11389494-90cb-4d38-8635-dcbdce4ba92b.glb",
           "isExternalAsset": false
         },
         {
           "modelName": "gltf",
-          "name": "Lemon_Cube.006",
-          "identifier": "gltf:125767-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-          "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-          "assetLocator": "125768-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a.glb",
+          "name": "Orange_Cube.5",
+          "identifier": "gltf:96424-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "sourceIdentifier": "master3_d_object_model:96430-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "assetLocator": "96425-11389494-90cb-4d38-8635-dcbdce4ba92b.glb",
           "isExternalAsset": false
         },
         {
           "modelName": "gltf",
-          "name": "Tomato_Cube.009",
-          "identifier": "gltf:125779-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-          "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-          "assetLocator": "125780-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a.glb",
+          "name": "Tomato_Cube.10",
+          "identifier": "gltf:96446-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "sourceIdentifier": "master3_d_object_model:96452-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "assetLocator": "96447-11389494-90cb-4d38-8635-dcbdce4ba92b.glb",
           "isExternalAsset": false
         }
       ]
@@ -752,7 +940,16 @@
           "sectionFileLocation": "objects/Muskrat_Animations/Muskrat_Animations.object"
         },
         {
-          "sectionFileLocation": "ezadsGraphics/fruits-n-stuff/source/FruitsnStuff.object"
+          "sectionFileLocation": "objects/carrot/carrot.object"
+        },
+        {
+          "sectionFileLocation": "objects/lemon/lemon.object"
+        },
+        {
+          "sectionFileLocation": "objects/orange/orange.object"
+        },
+        {
+          "sectionFileLocation": "objects/tomato/tomato.object"
         }
       ]
     },
@@ -974,25 +1171,135 @@
         },
         {
           "modelName": "asset_collection_model",
-          "name": "FruitsnStuff",
-          "identifier": "asset_collection_model:125789-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-          "assetDataHash": "96a330b6eac1f7360ee3f358c61f6c9d",
-          "assetLocator": "ezadsGraphics/fruits-n-stuff/source/FruitsnStuff.obj",
-          "authoringTool": "",
+          "name": "carrot",
+          "identifier": "asset_collection_model:96361-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "applicationData": [
+            {
+              "spark_blender_addon": 1,
+              "sparkar_optimization": {
+                "InvertedReducePercentage": 0
+              }
+            }
+          ],
+          "assetDataHash": "81e12c5ab036bc00bc76e999a09929da",
+          "assetLocator": "objects/carrot/carrot.gltf",
+          "authoringTool": "Khronos glTF Blender I/O v1.7.33",
           "excludeDuringExport": true,
           "isExternalAsset": true,
-          "master3DInstanceSourceHash": "96a330b6eac1f7360ee3f358c61f6c9d",
+          "master3DInstanceSourceHash": "81e12c5ab036bc00bc76e999a09929da",
           "children": [
             {
               "modelName": "unsupportedFeatures",
               "name": "unsupportedFeatures0",
-              "identifier": "unsupportedFeatures:125787-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+              "identifier": "unsupportedFeatures:96359-11389494-90cb-4d38-8635-dcbdce4ba92b",
               "namesForFeatureType": {
                 "Material": [
-                  "Texture4",
-                  "Texture3",
-                  "Texture",
+                  "Texture4"
+                ],
+                "Texture": [
+                  "TextureDiff5"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "lemon",
+          "identifier": "asset_collection_model:96412-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "applicationData": [
+            {
+              "spark_blender_addon": 1,
+              "sparkar_optimization": {
+                "InvertedReducePercentage": 0
+              }
+            }
+          ],
+          "assetDataHash": "49163bafb9602468d65050c4d91e9b1c",
+          "assetLocator": "objects/lemon/lemon.gltf",
+          "authoringTool": "Khronos glTF Blender I/O v1.7.33",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "49163bafb9602468d65050c4d91e9b1c",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:96410-11389494-90cb-4d38-8635-dcbdce4ba92b",
+              "namesForFeatureType": {
+                "Material": [
+                  "Texture"
+                ],
+                "Texture": [
+                  "TextureDiff3"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "orange",
+          "identifier": "asset_collection_model:96434-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "applicationData": [
+            {
+              "spark_blender_addon": 1,
+              "sparkar_optimization": {
+                "InvertedReducePercentage": 0
+              }
+            }
+          ],
+          "assetDataHash": "16fadba44482a3a4410c452c31a90c51",
+          "assetLocator": "objects/orange/orange.gltf",
+          "authoringTool": "Khronos glTF Blender I/O v1.7.33",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "16fadba44482a3a4410c452c31a90c51",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:96432-11389494-90cb-4d38-8635-dcbdce4ba92b",
+              "namesForFeatureType": {
+                "Material": [
+                  "Texture3"
+                ],
+                "Texture": [
+                  "TextureDiff4"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "tomato",
+          "identifier": "asset_collection_model:96456-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "applicationData": [
+            {
+              "spark_blender_addon": 1,
+              "sparkar_optimization": {
+                "InvertedReducePercentage": 0
+              }
+            }
+          ],
+          "assetDataHash": "d4a31b7a54f6dac0f61ae7a03ab4433b",
+          "assetLocator": "objects/tomato/tomato.gltf",
+          "authoringTool": "Khronos glTF Blender I/O v1.7.33",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "d4a31b7a54f6dac0f61ae7a03ab4433b",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:96454-11389494-90cb-4d38-8635-dcbdce4ba92b",
+              "namesForFeatureType": {
+                "Material": [
                   "Texture2"
+                ],
+                "Texture": [
+                  "TextureDiff2"
                 ]
               }
             }

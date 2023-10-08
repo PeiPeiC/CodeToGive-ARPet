@@ -1,0 +1,27 @@
+{
+  "modelName": "texture",
+  "name": "office_diffuse",
+  "identifier": "texture:96363-11389494-90cb-4d38-8635-dcbdce4ba92b",
+  "alphaPremultiplicationMode": "none",
+  "assetLocator": "96364-11389494-90cb-4d38-8635-dcbdce4ba92b.png",
+  "colorEncoding": "rgbd",
+  "compressionQuality": "high",
+  "coordMapping": "equirectangular",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:96366-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:96368-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:96370-11389494-90cb-4d38-8635-dcbdce4ba92b"
+  ],
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 32,
+  "importIssues": {},
+  "isExternalAsset": false,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "repeat",
+  "vWrapMode": "clamp",
+  "width": 64
+}

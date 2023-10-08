@@ -1,0 +1,27 @@
+{
+  "modelName": "texture",
+  "name": "office_specular",
+  "identifier": "texture:96381-11389494-90cb-4d38-8635-dcbdce4ba92b",
+  "alphaPremultiplicationMode": "none",
+  "assetLocator": "96382-11389494-90cb-4d38-8635-dcbdce4ba92b.png",
+  "colorEncoding": "rgbd",
+  "compressionQuality": "high",
+  "coordMapping": "equirectangular",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:96384-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:96386-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:96388-11389494-90cb-4d38-8635-dcbdce4ba92b"
+  ],
+  "filter": "trilinear",
+  "hasOfflineMipmaps": false,
+  "height": 256,
+  "importIssues": {},
+  "isExternalAsset": false,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "repeat",
+  "vWrapMode": "clamp",
+  "width": 512
+}

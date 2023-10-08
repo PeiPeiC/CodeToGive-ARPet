@@ -1,15 +1,20 @@
 {
   "modelName": "texture",
-  "name": "TextureDiff4",
-  "identifier": "texture:125843-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+  "name": "tomato-tex",
+  "identifier": "texture:103562-11389494-90cb-4d38-8635-dcbdce4ba92b",
   "alphaPremultiplicationMode": "should_premultiply",
-  "assetDataHash": "f6f004d586dc45a2683fcb5da0afca3e",
-  "assetLocator": "textures/TextureDiff4.png",
+  "assetDataHash": "686a8a4c46259c7367c2ae9d5c99d10a",
+  "assetLocator": "textures/tomato-tex.png",
   "colorEncoding": "linear",
   "compressionQuality": "high",
   "coordMapping": "none",
   "excludeDuringExport": false,
   "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:103572-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:103580-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:103588-11389494-90cb-4d38-8635-dcbdce4ba92b"
+  ],
   "filter": "bilinear",
   "hasOfflineMipmaps": false,
   "height": 512,
@@ -24,11 +29,11 @@
     {
       "modelName": "data_texture_metadata_model",
       "name": "data_texture_metadata_model0",
-      "assetDataHash": "f6f004d586dc45a2683fcb5da0afca3e",
-      "colorCount": 569,
+      "assetDataHash": "686a8a4c46259c7367c2ae9d5c99d10a",
+      "colorCount": 39,
       "detectedAlphaChannel": "no_alpha",
       "detectedOriginalFormat": "png",
-      "entropyOfDistribution": 3.8423935167855228,
+      "entropyOfDistribution": 2.0968652681581985,
       "pixelsHigh": 512,
       "pixelsWide": 512
     }

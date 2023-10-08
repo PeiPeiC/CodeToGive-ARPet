@@ -1,15 +1,20 @@
 {
   "modelName": "texture",
-  "name": "TextureDiff3",
-  "identifier": "texture:125839-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+  "name": "carrot-tex",
+  "identifier": "texture:103558-11389494-90cb-4d38-8635-dcbdce4ba92b",
   "alphaPremultiplicationMode": "should_premultiply",
-  "assetDataHash": "670a700f2ef3354e36b42070aa5717a2",
-  "assetLocator": "textures/TextureDiff3.png",
+  "assetDataHash": "ad9dc1d38b15cfc04409d7c624f109a8",
+  "assetLocator": "textures/carrot-tex.png",
   "colorEncoding": "linear",
   "compressionQuality": "high",
   "coordMapping": "none",
   "excludeDuringExport": false,
   "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:103574-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:103582-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:103590-11389494-90cb-4d38-8635-dcbdce4ba92b"
+  ],
   "filter": "bilinear",
   "hasOfflineMipmaps": false,
   "height": 512,
@@ -24,11 +29,11 @@
     {
       "modelName": "data_texture_metadata_model",
       "name": "data_texture_metadata_model0",
-      "assetDataHash": "670a700f2ef3354e36b42070aa5717a2",
-      "colorCount": 123,
+      "assetDataHash": "ad9dc1d38b15cfc04409d7c624f109a8",
+      "colorCount": 44,
       "detectedAlphaChannel": "no_alpha",
       "detectedOriginalFormat": "png",
-      "entropyOfDistribution": 2.7754896901798896,
+      "entropyOfDistribution": 3.03899929710024,
       "pixelsHigh": 512,
       "pixelsWide": 512
     }

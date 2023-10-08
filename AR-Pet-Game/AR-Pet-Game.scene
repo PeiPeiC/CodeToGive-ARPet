@@ -192,7 +192,7 @@
                   "tags": [],
                   "transform": {
                     "rx": 0,
-                    "ry": -0,
+                    "ry": 0,
                     "rz": 0,
                     "sx": 3.509580039917637E-7,
                     "sy": 3.509580039917637E-7,
@@ -1064,7 +1064,7 @@
                   "tags": [],
                   "transform": {
                     "rx": -1.5707964897155762,
-                    "ry": -0,
+                    "ry": 0,
                     "rz": 0,
                     "sx": 39.99999237060547,
                     "sy": 39.999996185302734,
@@ -1286,7 +1286,7 @@
                       "tags": [],
                       "transform": {
                         "rx": 0,
-                        "ry": -0,
+                        "ry": 0,
                         "rz": 0,
                         "sx": 1,
                         "sy": 0.9999999403953552,
@@ -1314,7 +1314,7 @@
                           "tags": [],
                           "transform": {
                             "rx": 1.4210853021136109E-14,
-                            "ry": -0,
+                            "ry": 0,
                             "rz": 0,
                             "sx": 1,
                             "sy": 1.0000001192092896,
@@ -1342,7 +1342,7 @@
                               "tags": [],
                               "transform": {
                                 "rx": 1.5707964897155762,
-                                "ry": -0,
+                                "ry": 0,
                                 "rz": 0,
                                 "sx": 0.9999999403953552,
                                 "sy": 0.9816106557846069,
@@ -1611,7 +1611,7 @@
                   "tags": [],
                   "transform": {
                     "rx": -1.5707964897155762,
-                    "ry": -0,
+                    "ry": 0,
                     "rz": 0,
                     "sx": 39.9999885559082,
                     "sy": 39.99999237060547,
@@ -1710,7 +1710,7 @@
                   "tags": [],
                   "transform": {
                     "rx": -1.5707964897155762,
-                    "ry": -0,
+                    "ry": 0,
                     "rz": 0,
                     "sx": 39.99999237060547,
                     "sy": 39.999996185302734,
@@ -1894,7 +1894,7 @@
                       "tags": [],
                       "transform": {
                         "rx": 0,
-                        "ry": -0,
+                        "ry": 0,
                         "rz": 0,
                         "sx": 1,
                         "sy": 0.9999999403953552,
@@ -1922,7 +1922,7 @@
                           "tags": [],
                           "transform": {
                             "rx": 1.4210853021136109E-14,
-                            "ry": -0,
+                            "ry": 0,
                             "rz": 0,
                             "sx": 1,
                             "sy": 1.0000001192092896,
@@ -1950,7 +1950,7 @@
                               "tags": [],
                               "transform": {
                                 "rx": 1.5707964897155762,
-                                "ry": -0,
+                                "ry": 0,
                                 "rz": 0,
                                 "sx": 0.9999999403953552,
                                 "sy": 0.9999999403953552,
@@ -2163,7 +2163,7 @@
                   "tags": [],
                   "transform": {
                     "rx": -1.5707964897155762,
-                    "ry": -0,
+                    "ry": 0,
                     "rz": 0,
                     "sx": 39.99999237060547,
                     "sy": 39.999996185302734,
@@ -2238,138 +2238,7 @@
             "x": 0,
             "y": 0,
             "z": 0
-          },
-          "children": [
-            {
-              "modelName": "3_d_object_instance_model",
-              "name": "FruitsnStuff",
-              "identifier": "master3_d_object_model:126285-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-              "sourceIdentifier": "master3_d_object_model:125785-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-              "animationMask": {
-                "position": false,
-                "rotation": false,
-                "scale": false
-              },
-              "cameraVisibility": "back|front",
-              "depth": 2.0534989833831787,
-              "height": 3.3708600997924805,
-              "hidden": true,
-              "layerIdentifier": "layer0",
-              "outputVisibility": "preview|capture",
-              "physicsEnabled": false,
-              "tags": [],
-              "transform": {
-                "rx": 0,
-                "ry": 0,
-                "rz": 0,
-                "sx": 1,
-                "sy": 1,
-                "sz": 1,
-                "x": 0,
-                "y": 0,
-                "z": 0
-              },
-              "width": 10.973186492919922,
-              "children": [
-                {
-                  "modelName": "mesh",
-                  "name": "Tomato_Cube.009",
-                  "identifier": "mesh:126405-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                  "sourceIdentifier": "mesh:125773-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                  "animationMask": {
-                    "position": false,
-                    "rotation": false,
-                    "scale": false
-                  },
-                  "cameraVisibility": "back|front",
-                  "castShadow": false,
-                  "hidden": false,
-                  "layerIdentifier": "layer0",
-                  "nodeName": "Tomato_Cube.009",
-                  "numberOfFaces": 1088,
-                  "outputVisibility": "preview|capture",
-                  "physicsEnabled": false,
-                  "prefabIdentifier": "gltf:125779-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                  "receiveShadow": false,
-                  "renderPass": "main_scene",
-                  "tags": [],
-                  "transform": {
-                    "rx": 0,
-                    "ry": -0,
-                    "rz": 0,
-                    "sx": 1,
-                    "sy": 1,
-                    "sz": 1,
-                    "x": 0.7727810144424438,
-                    "y": 0.6717495322227478,
-                    "z": -0.6760765314102173
-                  },
-                  "useEmbeddedBlendshapes": false,
-                  "children": [
-                    {
-                      "modelName": "surfaces",
-                      "identifier": "surfaces:126408-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                      "sourceIdentifier": "surfaces:125775-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                      "children": [
-                        {
-                          "modelName": "surface",
-                          "name": "surface0",
-                          "identifier": "surface:126411-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "sourceIdentifier": "surface:125782-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "isMaterialIdentifierEnabled": true,
-                          "materialIdentifier": "dependent_material_model:125731-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "surfaceGroupIdentifier": "125783-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
-                        }
-                      ]
-                    },
-                    {
-                      "modelName": "blend_shapes_model",
-                      "identifier": "blend_shapes_model:126414-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                      "sourceIdentifier": "blend_shapes_model:125777-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                      "children": [
-                        {
-                          "modelName": "blendShape",
-                          "name": "Kakkarot_Cube.002",
-                          "identifier": "blendShape:137551-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "nodeName": "Kakkarot_Cube.002",
-                          "prefabIdentifier": "gltf:125743-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "surfaceIndex": 0,
-                          "weight": 0
-                        },
-                        {
-                          "modelName": "blendShape",
-                          "name": "Orange_Cube.004",
-                          "identifier": "blendShape:137553-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "nodeName": "Orange_Cube.004",
-                          "prefabIdentifier": "gltf:125755-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "surfaceIndex": 0,
-                          "weight": 0
-                        },
-                        {
-                          "modelName": "blendShape",
-                          "name": "Lemon_Cube.006",
-                          "identifier": "blendShape:137555-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "nodeName": "Lemon_Cube.006",
-                          "prefabIdentifier": "gltf:125767-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "surfaceIndex": 0,
-                          "weight": 0
-                        },
-                        {
-                          "modelName": "blendShape",
-                          "name": "Tomato_Cube.009",
-                          "identifier": "blendShape:137557-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "nodeName": "Tomato_Cube.009",
-                          "prefabIdentifier": "gltf:125779-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
-                          "surfaceIndex": 0,
-                          "weight": 0
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          }
         }
       ]
     }

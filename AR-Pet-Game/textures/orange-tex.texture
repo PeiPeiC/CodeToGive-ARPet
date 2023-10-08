@@ -1,15 +1,20 @@
 {
   "modelName": "texture",
-  "name": "TextureDiff2",
-  "identifier": "texture:125835-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+  "name": "orange-tex",
+  "identifier": "texture:103570-11389494-90cb-4d38-8635-dcbdce4ba92b",
   "alphaPremultiplicationMode": "should_premultiply",
-  "assetDataHash": "b41c3ccb450a9611fca856c9973aa036",
-  "assetLocator": "textures/TextureDiff2.png",
+  "assetDataHash": "14e6525e8138a8118f180c4594171196",
+  "assetLocator": "textures/orange-tex.png",
   "colorEncoding": "linear",
   "compressionQuality": "high",
   "coordMapping": "none",
   "excludeDuringExport": false,
   "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:103578-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:103586-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:103594-11389494-90cb-4d38-8635-dcbdce4ba92b"
+  ],
   "filter": "bilinear",
   "hasOfflineMipmaps": false,
   "height": 512,
@@ -24,11 +29,11 @@
     {
       "modelName": "data_texture_metadata_model",
       "name": "data_texture_metadata_model0",
-      "assetDataHash": "b41c3ccb450a9611fca856c9973aa036",
-      "colorCount": 663,
+      "assetDataHash": "14e6525e8138a8118f180c4594171196",
+      "colorCount": 29,
       "detectedAlphaChannel": "no_alpha",
       "detectedOriginalFormat": "png",
-      "entropyOfDistribution": 2.2915805894321317,
+      "entropyOfDistribution": 3.043164750572541,
       "pixelsHigh": 512,
       "pixelsWide": 512
     }
