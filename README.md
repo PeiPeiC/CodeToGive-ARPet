@@ -82,3 +82,4 @@ Open the provided URL in your browser to access the AR Pet Game.
 - Google Speech Recognition for voice input processing.
 
 Enjoy designing your AR pet! 🐾
+
