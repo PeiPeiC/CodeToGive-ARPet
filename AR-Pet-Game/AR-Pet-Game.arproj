@@ -868,6 +868,9 @@
         },
         {
           "sectionFileLocation": "animations/geckoHit.animationctrl"
+        },
+        {
+          "sectionFileLocation": "animations/animationPlaybackController0.animationctrl"
         }
       ]
     }
