@@ -68,13 +68,13 @@
           "specularEnvironmentTextureIdentifier": "textures/SpecularEnvironment-3.texture"
         },
         {
-          "sectionFileLocation": "textures/roll.texture"
+          "sectionFileLocation": "textures/geckoRoll.texture"
         },
         {
-          "sectionFileLocation": "textures/walk.texture"
+          "sectionFileLocation": "textures/geckoWalk.texture"
         },
         {
-          "sectionFileLocation": "textures/jump.texture"
+          "sectionFileLocation": "textures/geckoJump.texture"
         },
         {
           "sectionFileLocation": "textures/carrot.texture"
@@ -789,7 +789,7 @@
       "effectUsesUnitsScriptingModule": false,
       "effectUsesVariadicMath": true,
       "effectUsesVertexTextureFetch": false,
-      "effectUsesVisualShaders": false,
+      "effectUsesVisualShaders": true,
       "effectUsesVisualShadersSdf": false,
       "effectUsesVoiceInteraction": false,
       "effectUsesWarpPostProcessor": false,
@@ -902,22 +902,13 @@
           "sectionFileLocation": "materials/M_Muskrat.material"
         },
         {
-          "sectionFileLocation": "materials/walkBt.material"
+          "sectionFileLocation": "materials/walkBtn.material"
         },
         {
-          "sectionFileLocation": "materials/jumpBt.material"
+          "sectionFileLocation": "materials/jumpBtn.material"
         },
         {
-          "sectionFileLocation": "materials/rollBt.material"
-        },
-        {
-          "sectionFileLocation": "materials/walkBt0.material"
-        },
-        {
-          "sectionFileLocation": "materials/jumpBt0.material"
-        },
-        {
-          "sectionFileLocation": "materials/rollBt0.material"
+          "sectionFileLocation": "materials/rollBtn.material"
         },
         {
           "sectionFileLocation": "materials/apple.material"
@@ -941,13 +932,10 @@
           "sectionFileLocation": "objects/tomato/Texture7.material"
         },
         {
-          "sectionFileLocation": "materials/muskratWalk-2.material"
+          "sectionFileLocation": "materials/geckoBtn.material"
         },
         {
-          "sectionFileLocation": "materials/muskratJump-2.material"
-        },
-        {
-          "sectionFileLocation": "materials/muskratEat-2.material"
+          "sectionFileLocation": "materials/muskratBtn.material"
         }
       ]
     },

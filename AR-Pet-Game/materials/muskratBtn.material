@@ -1,14 +1,14 @@
 {
   "modelName": "defaultMaterial",
-  "name": "walkBt0",
-  "identifier": "defaultMaterial:116410-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+  "name": "muskratBtn",
+  "identifier": "defaultMaterial:165387-49659ef9-dcc2-4dcd-89c9-5f3bb36a3f95",
   "alphaTestEnabled": false,
   "alphaTestThreshold": 0,
   "blendMode": "alpha",
   "colorEncoding": "linear",
   "cullMode": "back",
   "diffuseFactor": "0xffffffff",
-  "diffuseTextureName": "texture:101751-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+  "diffuseTextureName": "texture:140429-8797610e-c4fd-416e-a790-317261c3c0f9",
   "diffuseTextureTransform": {
     "offsetU": 0,
     "offsetV": 0,
@@ -16,7 +16,7 @@
     "scaleU": 1,
     "scaleV": 1
   },
-  "doubleSided": true,
+  "doubleSided": false,
   "emissiveEnabled": false,
   "emissiveFactor": "0xff000000",
   "emissiveTextureTransform": {
@@ -34,7 +34,7 @@
   "isNormalTextureIdentifierEnabled": false,
   "isReflectiveTextureIdentifierEnabled": false,
   "isSpecularTextureIdentifierEnabled": false,
-  "lightingEnabled": false,
+  "lightingEnabled": true,
   "multiplyMode": "alpha_only",
   "multiplyTextureTransform": {
     "offsetU": 0,

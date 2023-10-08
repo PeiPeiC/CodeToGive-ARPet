@@ -1,14 +1,13 @@
 {
   "modelName": "defaultMaterial",
-  "name": "muskratWalk",
-  "identifier": "defaultMaterial:151806-8797610e-c4fd-416e-a790-317261c3c0f9",
+  "name": "rollBtn",
+  "identifier": "defaultMaterial:163071-2d0b996b-4c1d-4f26-88df-d5e74926bef2",
   "alphaTestEnabled": false,
   "alphaTestThreshold": 0,
   "blendMode": "alpha",
   "colorEncoding": "linear",
   "cullMode": "back",
   "diffuseFactor": "0xffffffff",
-  "diffuseTextureName": "texture:140429-8797610e-c4fd-416e-a790-317261c3c0f9",
   "diffuseTextureTransform": {
     "offsetU": 0,
     "offsetV": 0,
@@ -16,7 +15,7 @@
     "scaleU": 1,
     "scaleV": 1
   },
-  "doubleSided": false,
+  "doubleSided": true,
   "emissiveEnabled": false,
   "emissiveFactor": "0xff000000",
   "emissiveTextureTransform": {
@@ -28,7 +27,7 @@
   },
   "importIssues": {},
   "invertMultiply": false,
-  "isDiffuseTextureIdentifierEnabled": true,
+  "isDiffuseTextureIdentifierEnabled": false,
   "isEmissiveTextureIdentifierEnabled": false,
   "isMultiplyTextureIdentifierEnabled": false,
   "isNormalTextureIdentifierEnabled": false,
