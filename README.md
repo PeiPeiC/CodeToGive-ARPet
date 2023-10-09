@@ -79,6 +79,9 @@ https://github.com/PeiPeiC/CodeToGive-ARPet/assets/97734079/8472fb07-ea26-41bf-8
 
 In the AR experience, we can interact with the generated pet. Currently we can make them do tricks and feed them with some food. In the future, we would like to expand these features to include more interactions such as the pet being able to tell stories for the kids, pet customizations, and the ability to interact with other's pet no matter where they live.
 
+Demo Links:
+**Instagram:** https://www.instagram.com/ar/1690152044804497/
+**Facebook:** https://www.facebook.com/fbcameraeffects/tryit/1690152044804497/
 
 ## Customization
 
