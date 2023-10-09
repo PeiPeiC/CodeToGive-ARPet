@@ -68,6 +68,10 @@ Open the provided URL in your browser to access the AR Pet Game.
 
 ## Output & Demonstration
 
+**Our website**
+
+https://github.com/PeiPeiC/CodeToGive-ARPet/assets/104357328/e8c997f1-fcca-40c6-a8b9-9025d47e4018
+
 **The AR experience**
 
 
