@@ -1,9 +1,9 @@
-# CodeToGive-ARPet
-Team1 Code to Give -- Morgan Stanley
+# CodeToGive - Petopia
+Team 1 Code to Give -- Morgan Stanley
 
 ## Overview
 
-Welcome to the AR Pet Game! This interactive application was developed as a solution to a technical challenge aimed at creating an entertaining, engaging, and accessible sensory experience for children and young people referred to CHAS (Children's Hospices Across Scotland). The app allows users to design their own augmented reality (AR) pet using various input methods, including voice, text, and sign language. Designed with a child-friendly interface, the app aims to bring moments of joy to its users.
+Welcome to the Petopia! This interactive application was developed as a solution to a technical challenge aimed at creating an entertaining, engaging, and accessible sensory experience for children and young people referred to CHAS (Children's Hospices Across Scotland). The app allows users to design their own augmented reality (AR) pet using various input methods, including voice, text, and sign language. Designed with a child-friendly interface, the app aims to bring moments of joy to its users.
 
 ## Features
 
@@ -15,6 +15,7 @@ Welcome to the AR Pet Game! This interactive application was developed as a solu
    - Sign Language Input: Use Makaton sign language to design your pet.
 4. **Pet Choice Page**: If users opt for a pre-designed pet, they can select from a variety of available pets.
 5. **Image Generation**: Based on the user's input, an image of the pet is generated using OpenAI.
+6. **Immerse in AR**: Experience and interact with the pets through AR. Users can make the pets do tricks & feed them.
 
 ## Setup
 
@@ -65,6 +66,11 @@ Open the provided URL in your browser to access the AR Pet Game.
 4. **Provide Input**: Depending on your chosen method, provide the necessary input to design your pet.
 5. **View Your Pet**: Once you've provided your input, the app will generate and display an image of your pet.
 
+## Output & Demonstration
+
+**The AR experience**
+
+
 ## Customization
 
 - **Icons**: You can replace the icons in the `ICONS` dictionary with your own icons. Make sure to update the paths accordingly.
@@ -80,6 +86,9 @@ Open the provided URL in your browser to access the AR Pet Game.
 
 - OpenAI for image generation.
 - Google Speech Recognition for voice input processing.
+- Meta Spark Studio for AR effects implementation
+- "Quirky Series - FREE Animals Pack" (https://skfb.ly/oHtnQ) by Omabuarts Studio is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+- "Fruits N' Stuff" (https://skfb.ly/6X7tA) by AlienDev is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
 
 Enjoy designing your AR pet! 🐾
 
