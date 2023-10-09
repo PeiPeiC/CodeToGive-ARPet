@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:91596-60540593-1c65-4e29-97e7-a71374ac4a38",
   "id": "91920605405931c654e2997e7a71374ac4a38",
-  "revision": "1749058797610ec4fd416ea790317261c3c0f9",
+  "revision": "140776470c3bd1661e4ef5ab2f2d861c121059",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -787,7 +787,7 @@
       "effectUsesUiPlanarBackend": false,
       "effectUsesUnifiedTargetTracking": false,
       "effectUsesUnitsScriptingModule": false,
-      "effectUsesVariadicMath": true,
+      "effectUsesVariadicMath": false,
       "effectUsesVertexTextureFetch": false,
       "effectUsesVisualShaders": true,
       "effectUsesVisualShadersSdf": false,
