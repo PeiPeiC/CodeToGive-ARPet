@@ -1,0 +1,28 @@
+{
+  "modelName": "texture",
+  "name": "forest_preview",
+  "identifier": "texture:97474-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+  "alphaPremultiplicationMode": "none",
+  "assetLocator": "97475-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "equirectangular",
+  "excludeDuringExport": true,
+  "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:97477-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+    "textureExportConfig:97479-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7",
+    "textureExportConfig:97481-33c3dde9-d3b8-4221-9ef4-f71ff87b99a7"
+  ],
+  "externalSourceLocator": "sparkarstudio://arlibrary/facebook/texture/2705186816420465",
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 256,
+  "importIssues": {},
+  "isExternalAsset": false,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "repeat",
+  "vWrapMode": "clamp",
+  "width": 512
+}

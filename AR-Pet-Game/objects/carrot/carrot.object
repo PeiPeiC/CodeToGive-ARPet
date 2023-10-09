@@ -1,0 +1,88 @@
+{
+  "modelName": "master3_d_object_model",
+  "name": "carrot",
+  "identifier": "master3_d_object_model:96357-11389494-90cb-4d38-8635-dcbdce4ba92b",
+  "sourceIdentifier": "asset_collection_model:96361-11389494-90cb-4d38-8635-dcbdce4ba92b",
+  "animationMask": {
+    "position": false,
+    "rotation": false,
+    "scale": false
+  },
+  "cameraVisibility": "back|front",
+  "depth": 0.470708429813385,
+  "globalScaleFactor": 1,
+  "height": 1,
+  "hidden": false,
+  "layerIdentifier": "layer0",
+  "outputVisibility": "preview|capture",
+  "physicsEnabled": false,
+  "tags": [],
+  "transform": {
+    "rx": 0,
+    "ry": 0,
+    "rz": 0,
+    "sx": 1,
+    "sy": 1,
+    "sz": 1,
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "width": 0.5158586502075195,
+  "children": [
+    {
+      "modelName": "mesh",
+      "name": "Kakkarot_Cube.002",
+      "identifier": "mesh:96345-11389494-90cb-4d38-8635-dcbdce4ba92b",
+      "animationMask": {
+        "position": false,
+        "rotation": false,
+        "scale": false
+      },
+      "cameraVisibility": "back|front",
+      "castShadow": false,
+      "hidden": false,
+      "layerIdentifier": "layer0",
+      "nodeName": "Kakkarot_Cube.002",
+      "numberOfFaces": 1440,
+      "outputVisibility": "preview|capture",
+      "physicsEnabled": false,
+      "prefabIdentifier": "gltf:96351-11389494-90cb-4d38-8635-dcbdce4ba92b",
+      "receiveShadow": false,
+      "renderPass": "main_scene",
+      "tags": [],
+      "transform": {
+        "rx": 0,
+        "ry": 0,
+        "rz": 0,
+        "sx": 1,
+        "sy": 1,
+        "sz": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "useEmbeddedBlendshapes": false,
+      "children": [
+        {
+          "modelName": "surfaces",
+          "identifier": "surfaces:96347-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "children": [
+            {
+              "modelName": "surface",
+              "name": "surface0",
+              "identifier": "surface:96354-11389494-90cb-4d38-8635-dcbdce4ba92b",
+              "isMaterialIdentifierEnabled": true,
+              "materialIdentifier": "dependent_metallic_roughness_p_b_r_material_model:96341-11389494-90cb-4d38-8635-dcbdce4ba92b",
+              "surfaceGroupIdentifier": "96355-11389494-90cb-4d38-8635-dcbdce4ba92b"
+            }
+          ]
+        },
+        {
+          "modelName": "blend_shapes_model",
+          "identifier": "blend_shapes_model:96349-11389494-90cb-4d38-8635-dcbdce4ba92b"
+        }
+      ]
+    }
+  ]
+}

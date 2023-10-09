@@ -1,0 +1,88 @@
+{
+  "modelName": "master3_d_object_model",
+  "name": "tomato",
+  "identifier": "master3_d_object_model:96452-11389494-90cb-4d38-8635-dcbdce4ba92b",
+  "sourceIdentifier": "asset_collection_model:96456-11389494-90cb-4d38-8635-dcbdce4ba92b",
+  "animationMask": {
+    "position": false,
+    "rotation": false,
+    "scale": false
+  },
+  "cameraVisibility": "back|front",
+  "depth": 0.6177036762237549,
+  "globalScaleFactor": 1,
+  "height": 1,
+  "hidden": false,
+  "layerIdentifier": "layer0",
+  "outputVisibility": "preview|capture",
+  "physicsEnabled": false,
+  "tags": [],
+  "transform": {
+    "rx": 0,
+    "ry": 0,
+    "rz": 0,
+    "sx": 1,
+    "sy": 1,
+    "sz": 1,
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "width": 0.6778164505958557,
+  "children": [
+    {
+      "modelName": "mesh",
+      "name": "Tomato_Cube.009",
+      "identifier": "mesh:96440-11389494-90cb-4d38-8635-dcbdce4ba92b",
+      "animationMask": {
+        "position": false,
+        "rotation": false,
+        "scale": false
+      },
+      "cameraVisibility": "back|front",
+      "castShadow": false,
+      "hidden": false,
+      "layerIdentifier": "layer0",
+      "nodeName": "Tomato_Cube.009",
+      "numberOfFaces": 1088,
+      "outputVisibility": "preview|capture",
+      "physicsEnabled": false,
+      "prefabIdentifier": "gltf:96446-11389494-90cb-4d38-8635-dcbdce4ba92b",
+      "receiveShadow": false,
+      "renderPass": "main_scene",
+      "tags": [],
+      "transform": {
+        "rx": 0,
+        "ry": 0,
+        "rz": 0,
+        "sx": 1,
+        "sy": 1,
+        "sz": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "useEmbeddedBlendshapes": false,
+      "children": [
+        {
+          "modelName": "surfaces",
+          "identifier": "surfaces:96442-11389494-90cb-4d38-8635-dcbdce4ba92b",
+          "children": [
+            {
+              "modelName": "surface",
+              "name": "surface0",
+              "identifier": "surface:96449-11389494-90cb-4d38-8635-dcbdce4ba92b",
+              "isMaterialIdentifierEnabled": true,
+              "materialIdentifier": "dependent_metallic_roughness_p_b_r_material_model:96436-11389494-90cb-4d38-8635-dcbdce4ba92b",
+              "surfaceGroupIdentifier": "96450-11389494-90cb-4d38-8635-dcbdce4ba92b"
+            }
+          ]
+        },
+        {
+          "modelName": "blend_shapes_model",
+          "identifier": "blend_shapes_model:96444-11389494-90cb-4d38-8635-dcbdce4ba92b"
+        }
+      ]
+    }
+  ]
+}

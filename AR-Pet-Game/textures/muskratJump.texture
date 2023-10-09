@@ -1,0 +1,41 @@
+{
+  "modelName": "texture",
+  "name": "muskratJump",
+  "identifier": "texture:140437-8797610e-c4fd-416e-a790-317261c3c0f9",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "ac7ccae7fce7c60146f27bf9d99e9bcd",
+  "assetLocator": "textures/muskratJump.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:140441-8797610e-c4fd-416e-a790-317261c3c0f9",
+    "textureExportConfig:140447-8797610e-c4fd-416e-a790-317261c3c0f9",
+    "textureExportConfig:140453-8797610e-c4fd-416e-a790-317261c3c0f9"
+  ],
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 1024,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 1024,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "ac7ccae7fce7c60146f27bf9d99e9bcd",
+      "colorCount": 4267,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 2.4748144949239905,
+      "pixelsHigh": 1024,
+      "pixelsWide": 1024
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "modelName": "animation_playback_controller_model",
+  "name": "muskratIdle",
+  "identifier": "animation_playback_controller_model:125851-7160d775-3dc0-4cca-8509-b4afd20d4727",
+  "animationIdentifier": "objects/Muskrat_Animations/Idle_A0.animation",
+  "autoPlay": true,
+  "clipEnd": 0.4166666666666667,
+  "clipProgress": 0,
+  "clipStart": 0,
+  "loop": true,
+  "speed": 0.5
+}

@@ -1,0 +1,41 @@
+{
+  "modelName": "texture",
+  "name": "lemon-tex",
+  "identifier": "texture:103566-11389494-90cb-4d38-8635-dcbdce4ba92b",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "aef0e9b48ce2e4e2a1e2380f6337c7b5",
+  "assetLocator": "textures/lemon-tex.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:103576-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:103584-11389494-90cb-4d38-8635-dcbdce4ba92b",
+    "textureExportConfig:103592-11389494-90cb-4d38-8635-dcbdce4ba92b"
+  ],
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 512,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 512,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "aef0e9b48ce2e4e2a1e2380f6337c7b5",
+      "colorCount": 9,
+      "detectedAlphaChannel": "no_alpha",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 2.272115336298152,
+      "pixelsHigh": 512,
+      "pixelsWide": 512
+    }
+  ]
+}

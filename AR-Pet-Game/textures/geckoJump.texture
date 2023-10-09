@@ -1,0 +1,41 @@
+{
+  "modelName": "texture",
+  "name": "geckoJump",
+  "identifier": "texture:101755-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "738887df5c2365afa213cc50b3d6a11d",
+  "assetLocator": "textures/geckoJump.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "exportConfigurations": [
+    "textureExportConfig:101757-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+    "textureExportConfig:101759-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+    "textureExportConfig:101761-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a"
+  ],
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 1024,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 1024,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "738887df5c2365afa213cc50b3d6a11d",
+      "colorCount": 5352,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 3.074085556192297,
+      "pixelsHigh": 1024,
+      "pixelsWide": 1024
+    }
+  ]
+}

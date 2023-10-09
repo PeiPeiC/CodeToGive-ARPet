@@ -1,0 +1,12 @@
+{
+  "modelName": "animation_playback_controller_model",
+  "name": "geckoRoll",
+  "identifier": "animation_playback_controller_model:97483-c9e8c87c-ee21-44d0-95a2-139ad2c6a59a",
+  "animationIdentifier": "objects/Gecko_Animations/Roll.animation",
+  "autoPlay": true,
+  "clipEnd": 0.4166666666666667,
+  "clipProgress": 0,
+  "clipStart": 0,
+  "loop": true,
+  "speed": 0.6
+}

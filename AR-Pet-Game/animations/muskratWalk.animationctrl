@@ -1,0 +1,12 @@
+{
+  "modelName": "animation_playback_controller_model",
+  "name": "muskratWalk",
+  "identifier": "animation_playback_controller_model:143260-8797610e-c4fd-416e-a790-317261c3c0f9",
+  "animationIdentifier": "objects/Muskrat_Animations/Walk0.animation",
+  "autoPlay": true,
+  "clipEnd": 0.4166666666666667,
+  "clipProgress": 0,
+  "clipStart": 0,
+  "loop": true,
+  "speed": 1
+}

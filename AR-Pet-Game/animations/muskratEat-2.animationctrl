@@ -1,0 +1,12 @@
+{
+  "modelName": "animation_playback_controller_model",
+  "name": "muskratEat",
+  "identifier": "animation_playback_controller_model:386004-49659ef9-dcc2-4dcd-89c9-5f3bb36a3f95",
+  "animationIdentifier": "objects/Muskrat_Animations/Eat0.animation",
+  "autoPlay": true,
+  "clipEnd": 0.4166666666666667,
+  "clipProgress": 0,
+  "clipStart": 0,
+  "loop": true,
+  "speed": 1
+}
